@@ -1,0 +1,32 @@
+PASS SHA256 known answer
+PASS five unique F1 candidates and guaranteed roles
+PASS recruitment seed reproducible
+PASS exactly three candidates required
+PASS duplicate candidate rejected
+PASS recruit once
+PASS one-to-six member group
+PASS global membership and duplicate add
+PASS transfer atomically clears old leader
+PASS failed transfer no partial state
+PASS pending resolution retains party/member/leader locks
+PASS three pending quests block fourth
+PASS dead or injured cannot start
+PASS same quest simulation input yields same result
+PASS resolve only pending and once
+PASS rewards once and pure result before applying
+PASS later death does not invalidate stored positive XP
+PASS F10 cap and multi-level award
+PASS wounded can equip; dead cannot; item conservation
+PASS equal current equipment retained and stock tie-break stable
+PASS potion priority healer then leader; no shortage block
+PASS resolve returns unused potions
+PASS forced wipe assigns zero XP and death
+PASS combat complete golden vector seed 0
+PASS combat complete golden vector seed 1
+PASS combat complete golden vector seed 7
+PASS combat complete golden vector seed 18446744073709551615
+PASS combat pause has no authoritative change
+PASS combat time partition and speeds preserve result
+PASS combat duplicate ids and zero HP rejected
+Browser model: 30 passed, 0 failed
+Presentation stub: 20 checks passed. Real Safari/layout/WebMCP validation not performed.
