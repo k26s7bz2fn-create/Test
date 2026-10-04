@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900"><defs>
+<linearGradient id="wall" x2="0" y2="1"><stop stop-color="#758981"/><stop offset="1" stop-color="#404c4c"/></linearGradient>
+<linearGradient id="floor" x2="0" y2="1"><stop stop-color="#977246"/><stop offset="1" stop-color="#382d2c"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#ffe3a0" stop-opacity=".6"/><stop offset="1" stop-color="#ffbe5c" stop-opacity="0"/></radialGradient>
+<radialGradient id="portal"><stop stop-color="#b0eeef"/><stop offset=".5" stop-color="#6995c5"/><stop offset="1" stop-color="#403860"/></radialGradient>
+<linearGradient id="window" x2="0" y2="1"><stop stop-color="#9bd1d1"/><stop offset="1" stop-color="#f9ce7f"/></linearGradient>
+<pattern id="stone" width="150" height="85" patternUnits="userSpaceOnUse"><rect width="150" height="85" fill="#62736b"/><path d="M0 0h150v85H0ZM75 0v43M0 43h150" fill="none" stroke="#465a55" stroke-width="4"/></pattern></defs>
+<rect width="1600" height="900" fill="#34373a"/><path d="M170 130H1430V550H170Z" fill="url(#stone)"/><path d="M0 0 320 125v425L0 720M1600 0 1310 125v425l290 170" fill="#535a52"/><path d="M0 690 340 520h955l305 170v210H0Z" fill="url(#floor)"/>
+<path d="M0 760h1600M0 839h1600M210 900l290-380m-60 380 185-380m180 380-15-380m270 380-125-380m350 380-260-380" stroke="#46352b" stroke-width="5" opacity=".7"/>
+<path d="M0 0H1600L1370 155H230Z" fill="#59432f"/><path d="M0 0 800 170 1600 0M80 0l720 170L1480 0M340 0l460 170L1230 0" fill="none" stroke="#2d2b29" stroke-width="28"/>
+<path d="M265 119v445m1080-445v445" stroke="#372f2a" stroke-width="58"/><path d="M261 133v407m1080-407v407" stroke="#876244" stroke-width="31"/>
+<path d="M633 354V188q165-203 330 0v166Z" fill="url(#window)" stroke="#ccb37d" stroke-width="19"/><path d="M797 107v247m-160-98h324m-278-95 229 189m-25-189L685 350" stroke="#756946" stroke-width="9"/>
+<path d="M650 330q60-110 128 0 84-76 169 0Z" fill="#548175" opacity=".7"/>
+<path d="M555 135v253l-57-25-50 25V135Z" fill="#a5483d" stroke="#d9b369" stroke-width="7"/><path d="m501 191-28 34 26 69 28-69Z" fill="#e3bc66"/>
+<path d="M1138 135v253l-57-25-50 25V135Z" fill="#48767f" stroke="#d9b369" stroke-width="7"/><path d="m1082 188 9 27 28 9-28 9-9 32-10-32-25-9 26-9Z" fill="#e3bc66"/>
+<ellipse cx="790" cy="510" rx="320" ry="230" fill="url(#glow)"/>
+<!-- Fireplace -->
+<path d="M665 520V438q134-107 268 0v82" fill="#343532" stroke="#b2a07b" stroke-width="22"/><rect x="640" y="382" width="315" height="29" rx="7" fill="#c6ad7b"/><path d="M687 520q-25-57 44-100-9 60 36 30 9-48 38-63-6 67 30 43 54-25 58 39 25 15 20 51Z" fill="#ed993d"/><path d="M738 520q-35-54 37-74-13 31 20 33l32-37q-8 42 30 78Z" fill="#ffe4a0"/><path d="m708 511 164-4m-143 14 130-36" stroke="#5a392a" stroke-width="13"/>
+<!-- Recruitment entry and bench -->
+<path d="M73 579V270q80-114 157 0v309Z" fill="#403d34" stroke="#a18b62" stroke-width="18"/><path d="M87 579V274q71-93 128 0v305Z" fill="#735339"/><path d="M111 261v304m30-319v320m32-315v315m29-300v300" stroke="#4b392d" stroke-width="5"/><circle cx="183" cy="410" r="10" fill="#d1ad64"/>
+<path d="M289 448h260l27 52H270Z" fill="#aa8050" stroke="#4d392c" stroke-width="8"/><path d="m293 502-4 76m244-76 4 76" stroke="#4b3629" stroke-width="19"/><path d="M328 319h177v107H328Z" fill="#365857" stroke="#c8a66c" stroke-width="10"/><path d="m409 335-30 26 30 43 30-43Z" fill="#d9b76e"/>
+<!-- Quest board -->
+<path d="M978 405h254v169H978Z" fill="#4c3526" stroke="#ab7d4a" stroke-width="14"/>
+<path d="m994 430 73-7 5 110-76 7Zm95-4 55 8-7 97-54-5Zm69 11 56-3 0 110-57-9Z" fill="#ead49e" stroke="#b59d6c" stroke-width="3"/>
+<path d="m1011 451 39-5m-41 20 40-5m-41 20 29-4m70-22 19 3m-21 12 21 4m44-12 22-2m-23 17 28-3" stroke="#97805d" stroke-width="3"/><circle cx="1032" cy="511" r="12" fill="#a94b3c"/>
+<!-- Portal arch -->
+<path d="M1360 576V326q92-154 189 0v250Z" fill="url(#portal)" stroke="#99879a" stroke-width="24"/><path d="M1390 548V334q61-105 128 0v214" fill="none" stroke="#b3dddd" stroke-width="6" opacity=".8"/><path d="m1411 414 22-49 18 71 33-30-20 91-30-40Z" fill="#b6e5e5" opacity=".8"/>
+<!-- Party round table -->
+<ellipse cx="718" cy="652" rx="162" ry="65" fill="#362d29"/><path d="m621 615-7 110m200-110 14 107" stroke="#443229" stroke-width="28"/><ellipse cx="719" cy="606" rx="169" ry="66" fill="#b38c50" stroke="#543e2c" stroke-width="13"/><path d="m618 596 120-28 92 34-104 34Z" fill="#e5ce98"/><path d="m646 596 42 4 29-17 42 15 32-5" fill="none" stroke="#9a8156" stroke-width="4"/>
+<!-- Guild chest -->
+<path d="m1212 643 197-12 41 90-203 30Z" fill="#513c2b" stroke="#282d2b" stroke-width="8"/><path d="m1212 641 3-62q109-58 193-15l1 67-165 40Z" fill="#9a623b" stroke="#423529" stroke-width="7"/><path d="m1250 578 10 157m110-168 25 154" stroke="#d2ab60" stroke-width="18"/><path d="m1294 648 40-3 8 37-41 5Z" fill="#e1bd6b" stroke="#654b2e" stroke-width="4"/><circle cx="1318" cy="664" r="7" fill="#644d34"/>
+<!-- Guild master's desk -->
+<path d="m411 777 566-16 100 89-720 25Z" fill="#b68c51" stroke="#4c3629" stroke-width="12"/><path d="m379 877 652-20-17 43H394Z" fill="#644531"/><path d="m480 800 177-13 31 43-208 14Z" fill="#eddbad"/><path d="m507 814 112-8m-103 21 86-7" stroke="#a58c61" stroke-width="4"/><path d="m817 791 103 0 30 47-123 3Z" fill="#3e565c" stroke="#d4ae64" stroke-width="6"/><path d="M948 808v-57" stroke="#d9bb7c" stroke-width="8"/><path d="M941 748q10-42 17 0Z" fill="#ffdf8f"/>
+<path d="M676 900V828q68-51 142 0v72" fill="#304b62" stroke="#bd9760" stroke-width="10"/><path d="M715 808v-32q38-33 68 0v37l-31 16Z" fill="#d1ad81"/><path d="M710 785q-4-64 47-61 42 3 30 65l-19-23-40 6Z" fill="#5f4534"/>
+</svg>
