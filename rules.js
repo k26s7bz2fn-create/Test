@@ -45,7 +45,9 @@ const items=[
 const item=id=>items.find(x=>x.id===id),clamp=(n,a,b)=>Math.max(a,Math.min(b,n)),level=xp=>thresholds.filter(x=>x<=xp).length;
 const guid=(cat,n)=>`00000000-0000-0000-${String(cat).padStart(4,'0')}-${String(n).padStart(12,'0')}`;
 function addOffers(s){['Kräuter am Waldrand','Lieferung zum Außenposten','Goblin-Spuren','Vermisste Reisende'].forEach((name,i)=>s.quests.push({id:guid(2,++s.offerSeq),name,type:i,distance:['Nah','Mittel','Weit','Mittel'][i],status:'Available',duration:60000,size:2,gold:40,xp:60,party:null,participants:[],result:null,paid:false}));}
-function initial(){let s={candidates:candidates(),recruited:false,members:[],parties:[],quests:[],gold:0,stock:[],potions:0,partySeq:0,offerSeq:0,itemSeq:0};addOffers(s);return s;}
+const recruitmentConfig=Object.freeze({candidateCost:50,refreshCost:25,poolSize:5,guildCapacity:12});
+function newPool(s){s.poolSeq++;s.normalPool=candidates(7+s.poolSeq).map((a,i)=>({...a,id:'browser.candidate.'+s.poolSeq+'.'+i}));}
+function initial(){let s={normalPool:[],poolSeq:0,retiredMembers:[],candidates:candidates(),recruited:false,members:[],parties:[],quests:[],gold:0,stock:[],potions:0,partySeq:0,offerSeq:0,itemSeq:0};addOffers(s);return s;}
 const get=(xs,id)=>{const x=xs.find(a=>a.id===id);if(!x)throw Error('Unbekannte ID');return x;};
 const locked=(s,id)=>s.quests.some(q=>['Active','CompletedPendingResolution'].includes(q.status)&&q.participants.includes(id));
 const partyLocked=(s,id)=>s.quests.some(q=>['Active','CompletedPendingResolution'].includes(q.status)&&q.party===id);
@@ -75,7 +77,10 @@ function simulate(q,members,leader,forced){const u=forced||((domain)=>Number(Big
 }
 function refresh(s,now){for(const q of s.quests)if(q.status==='Active'&&now>=q.end)q.status='CompletedPendingResolution';}
 function change(state,op,args={},now=1000){const s=clone(state);refresh(s,now);
- if(op==='recruit'){if(s.recruited)throw Error('Rekrutierung bereits abgeschlossen');if(args.ids.length!==3||new Set(args.ids).size!==3||s.members.length+3>12)throw Error('Genau drei auswählen.');s.members.push(...args.ids.map(id=>clone(get(s.candidates,id))));s.recruited=true;}
+ if(op==='recruit'){if(s.recruited)throw Error('Rekrutierung bereits abgeschlossen');if(args.ids.length!==3||new Set(args.ids).size!==3||s.members.length+3>12)throw Error('Genau drei auswählen.');s.members.push(...args.ids.map(id=>clone(get(s.candidates,id))));s.recruited=true;newPool(s);}
+ else if(op==='hire'){if(!s.recruited)throw Error('Zuerst die kostenlose Startrekrutierung abschließen.');if(args.pool!==s.poolSeq)throw Error('Dieser Kandidatenpool wurde bereits ersetzt.');const a=get(s.normalPool,args.candidate);if(s.members.length>=recruitmentConfig.guildCapacity)throw Error('Die Gilde ist voll ('+recruitmentConfig.guildCapacity+'/'+recruitmentConfig.guildCapacity+').');if(s.gold<recruitmentConfig.candidateCost)throw Error('Nicht genug Gold: '+recruitmentConfig.candidateCost+' Gold erforderlich.');if(s.members.some(m=>m.id===a.id))throw Error('Mitglied bereits aufgenommen.');s.gold-=recruitmentConfig.candidateCost;s.members.push(clone(a));s.normalPool=s.normalPool.filter(c=>c.id!==a.id);}
+ else if(op==='refreshPool'){if(!s.recruited)throw Error('Zuerst die Startrekrutierung abschließen.');if(args.pool!==s.poolSeq)throw Error('Diese Suche wurde bereits verarbeitet.');if(s.gold<recruitmentConfig.refreshCost)throw Error('Nicht genug Gold: '+recruitmentConfig.refreshCost+' Gold erforderlich.');s.gold-=recruitmentConfig.refreshCost;newPool(s);}
+ else if(op==='removeDead'){const a=get(s.members,args.member);if(args.confirmed!==true)throw Error('Endgültige Entfernung muss bestätigt werden.');if(!a.dead)throw Error('Nur verstorbene Mitglieder können entfernt werden.');if(locked(s,a.id))throw Error('Mitglied ist noch auf einer Quest gebunden.');if(s.quests.some(q=>q.status==='Resolved'&&!q.paid&&q.result?.members.some(m=>m.id===a.id)))throw Error('Zuerst alle offenen Questbelohnungen dieses Mitglieds abholen.');for(const slot of slots)if(a.gear[slot])s.stock.push(a.gear[slot]);s.potions+=a.potion;for(const p of s.parties){p.members=p.members.filter(id=>id!==a.id);if(p.leader===a.id)p.leader=null;}s.parties=s.parties.filter(p=>p.members.length);s.retiredMembers.push({id:a.id,name:a.name,cls:a.cls,level:a.level});s.members=s.members.filter(m=>m.id!==a.id);}
  else if(op==='createParty'){const ids=args.ids;if(ids.length<1||ids.length>6)throw Error('1–6 Mitglieder auswählen');for(const id of ids){const a=get(s.members,id);if(a.dead||s.parties.some(p=>p.members.includes(id)))throw Error('Mitglied nicht verfügbar');}s.parties.push({id:guid(1,++s.partySeq),name:'Gruppe '+s.partySeq,members:ids.slice(),leader:null});}
  else if(['leader','clearLeader','remove','add','transfer','dissolve'].includes(op)){const p=get(s.parties,args.party);if(partyLocked(s,p.id))throw Error('Gruppe ist bis zur Auswertung gesperrt.');
  if(op==='dissolve')s.parties=s.parties.filter(x=>x.id!==p.id);
@@ -97,6 +102,6 @@ function change(state,op,args={},now=1000){const s=clone(state);refresh(s,now);
  else throw Error('Unbekannte Aktion');
  validate(s);return s;
 }
-g.GuildRules={hash,sha,enc,cmp,clone,classes,profiles,items,item,slots,thresholds,level,candidates,initial,change,refresh,available,locked,partyLocked,validate,simulate,equip,guid};
+g.GuildRules={recruitmentConfig,hash,sha,enc,cmp,clone,classes,profiles,items,item,slots,thresholds,level,candidates,initial,change,refresh,available,locked,partyLocked,validate,simulate,equip,guid};
 if(typeof module!=='undefined')module.exports=g.GuildRules;
 })(typeof globalThis!=='undefined'?globalThis:window);

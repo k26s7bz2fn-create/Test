@@ -1,0 +1,121 @@
+$ node --version
+v24.19.0
+
+
+EXIT_CODE=0
+$ node tests/rules.test.cjs
+PASS SHA256 known answer
+PASS five unique F1 candidates and guaranteed roles
+PASS recruitment seed reproducible
+PASS exactly three candidates required
+PASS duplicate candidate rejected
+PASS recruit once
+PASS one-to-six member group
+PASS global membership and duplicate add
+PASS transfer atomically clears old leader
+PASS failed transfer no partial state
+PASS pending resolution retains party/member/leader locks
+PASS three pending quests block fourth
+PASS dead or injured cannot start
+PASS same quest simulation input yields same result
+PASS resolve only pending and once
+PASS rewards once and pure result before applying
+PASS later death does not invalidate stored positive XP
+PASS F10 cap and multi-level award
+PASS wounded can equip; dead cannot; item conservation
+PASS equal current equipment retained and stock tie-break stable
+PASS potion priority healer then leader; no shortage block
+PASS resolve returns unused potions
+PASS forced wipe assigns zero XP and death
+PASS combat complete golden vector seed 0
+PASS combat complete golden vector seed 1
+PASS combat complete golden vector seed 7
+PASS combat complete golden vector seed 18446744073709551615
+PASS combat pause has no authoritative change
+PASS combat time partition and speeds preserve result
+PASS combat duplicate ids and zero HP rejected
+Browser model: 30 passed, 0 failed
+
+
+EXIT_CODE=0
+$ node tests/recruitment-v2.test.cjs
+PASS starter 3 of 5 free, first paid pool free
+PASS normal pool and cost unavailable before starter
+PASS all candidate IDs unique across starter and normal pools
+PASS F1 recruit exactly 50 gold and one member
+PASS insufficient gold hire atomic
+PASS refresh exactly 25 gold and replace five
+PASS insufficient gold refresh atomic
+PASS same recruit request cannot be charged twice
+PASS same refresh request cannot be charged twice
+PASS stale candidate after refresh rejected
+PASS twelve member guild blocks recruitment
+PASS dead member still occupies slot until confirmed removal
+PASS confirmed removal frees capacity and allows hire
+PASS living members cannot be removed
+PASS dead removal clears leader and dissolves empty party
+PASS dead removal retains other party members and clears leader
+PASS dead removal returns gear and potion exactly once
+PASS quest-bound dead member cannot be removed
+PASS pending historical rewards must be collected before removing dead
+PASS quest gold funds recruitment without new reward values
+PASS refresh supports repeated funded rounds deterministically
+Recruitment V2: 21 passed, 0 failed
+
+
+EXIT_CODE=0
+$ node tests/ui-smoke.test.cjs
+Presentation stub: 20 checks passed. Real Safari/layout/WebMCP validation not performed.
+
+
+EXIT_CODE=0
+$ node tests/ui-v2.test.cjs
+PASS normal recruitment UI includes price, pool and refresh
+PASS double-tap hire only debits once and updates resources
+PASS double-tap refresh guarded even against new-pool click
+PASS insufficient gold shows readable feedback
+PASS dead removal opens confirmation and does not remove until confirmed
+PASS archived name remains readable on historical quest result
+PASS combat animation follows existing events without guild mutation
+PASS reduced-motion disables action effects, same combat state
+PASS pause changes no combat state; navigation resumes guild
+PASS TechnicalAbort is labeled as technical in arena
+V2 presentation stub: 10 passed, 0 failed. No real layout/browser execution.
+
+
+EXIT_CODE=0
+$ python3 tests/static-v2.test.py
+PASS index dependencies relative and exist
+PASS repository subpath preserved
+PASS all four class and four enemy portraits exist
+PASS nine local SVGs well-formed
+PASS hall asset exists
+PASS CSS image paths local and exist
+PASS no localhost, file paths or runtime server API
+PASS landscape responsive rules present
+PASS safe area and dynamic viewport configured
+PASS main buttons 48px and hall targets at least 44px
+PASS reduced motion CSS and effects guard
+PASS navigation has all seven screens
+PASS visual effects bounded per tick and card
+PASS root Pages marker included
+Static V2: 14 passed. No browser layout/iPhone measurement.
+
+
+EXIT_CODE=0
+$ node --check rules.js
+
+
+EXIT_CODE=0
+$ node --check game.js
+
+
+EXIT_CODE=0
+$ node --check combat.js
+
+
+EXIT_CODE=0
+$ node --check skills.js
+
+
+EXIT_CODE=0
