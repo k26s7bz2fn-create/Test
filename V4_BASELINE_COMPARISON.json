@@ -1,0 +1,205 @@
+{
+  "basis": "GuildGame_Sprint11_BrowserPlaytest_V3_LivingHall.zip",
+  "files": {
+    ".nojekyll": {
+      "before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "equal": true
+    },
+    "BROWSER_PLAYTEST_README.md": {
+      "before": "d18414c62bf92dde6f05e83e84678a7bb3c5d17e5b29afc781e515bf1395a2d2",
+      "after": "d18414c62bf92dde6f05e83e84678a7bb3c5d17e5b29afc781e515bf1395a2d2",
+      "equal": true
+    },
+    "BROWSER_PLAYTEST_TEST_OUTPUT.txt": {
+      "before": "bdfdcd537a5950f30f7dc291a0241e4fdd184fd60242b9f0319648e0e1fb0dbc",
+      "after": "bdfdcd537a5950f30f7dc291a0241e4fdd184fd60242b9f0319648e0e1fb0dbc",
+      "equal": true
+    },
+    "BROWSER_PLAYTEST_V2_REPORT.md": {
+      "before": "40c2fa23af6783a30388ba75492647bc6cce7234bf021b9abbb7b4ccdf70b1e7",
+      "after": "40c2fa23af6783a30388ba75492647bc6cce7234bf021b9abbb7b4ccdf70b1e7",
+      "equal": true
+    },
+    "BROWSER_PLAYTEST_V2_TEST_OUTPUT.txt": {
+      "before": "26d0c5f7404272a958069613c04570c29f08402ececf4c5d40e91f0fe646a14f",
+      "after": "26d0c5f7404272a958069613c04570c29f08402ececf4c5d40e91f0fe646a14f",
+      "equal": true
+    },
+    "BROWSER_PLAYTEST_V3_LIVING_HALL_REPORT.md": {
+      "before": "cf156f6d235e91eaa45727b7a2af74a9ded2a7dfe20ec0e27931a38ccd2ec0c3",
+      "after": "cf156f6d235e91eaa45727b7a2af74a9ded2a7dfe20ec0e27931a38ccd2ec0c3",
+      "equal": true
+    },
+    "BROWSER_PLAYTEST_V3_TEST_OUTPUT.txt": {
+      "before": "92d7e837861507f3d132a1dbe760dc7743d878da1e02b524f4ffbec4089b25dc",
+      "after": "92d7e837861507f3d132a1dbe760dc7743d878da1e02b524f4ffbec4089b25dc",
+      "equal": true
+    },
+    "V3_BASELINE_COMPARISON.json": {
+      "before": "2842b7345e1a20879de8891e73e1a8acfae05e517edaafb6a786e480a9367e43",
+      "after": "2842b7345e1a20879de8891e73e1a8acfae05e517edaafb6a786e480a9367e43",
+      "equal": true
+    },
+    "V3_START_HERE.md": {
+      "before": "cacbca77181a5e590e2de8c05c3433c4f6faa06d0c1673752beaf6a3393ebdf9",
+      "after": "cacbca77181a5e590e2de8c05c3433c4f6faa06d0c1673752beaf6a3393ebdf9",
+      "equal": true
+    },
+    "assets/adventurers-painted.webp": {
+      "before": "a9f2ac93e4f8f59b310baeadc63130531ed3387a5718b840e366bf69b6d127e7",
+      "after": "a9f2ac93e4f8f59b310baeadc63130531ed3387a5718b840e366bf69b6d127e7",
+      "equal": true
+    },
+    "assets/goblin-boss.svg": {
+      "before": "a1e83ff4448828560882bdac26cdfa5872815b8f377895291992b849495b23e5",
+      "after": "a1e83ff4448828560882bdac26cdfa5872815b8f377895291992b849495b23e5",
+      "equal": true
+    },
+    "assets/goblin-brute.svg": {
+      "before": "91c480da631d3ab94e8046c2f8c60c0c54de8fcb97c13fa6d30b981364cc550d",
+      "after": "91c480da631d3ab94e8046c2f8c60c0c54de8fcb97c13fa6d30b981364cc550d",
+      "equal": true
+    },
+    "assets/goblin-melee.svg": {
+      "before": "4a513c140577df150ceed4ea5b90b60b69ca7841e14b76f4209a1baba035cf6b",
+      "after": "4a513c140577df150ceed4ea5b90b60b69ca7841e14b76f4209a1baba035cf6b",
+      "equal": true
+    },
+    "assets/goblin-ranged.svg": {
+      "before": "82669119463a109fbd757a0342044244b2c58fc76a6b06b180d2e6219fdbf3a8",
+      "after": "82669119463a109fbd757a0342044244b2c58fc76a6b06b180d2e6219fdbf3a8",
+      "equal": true
+    },
+    "assets/guild-hall.svg": {
+      "before": "696b508b8bec54f8d416ed8a4e918242b61f504af237b468e8f0895bb5eec018",
+      "after": "696b508b8bec54f8d416ed8a4e918242b61f504af237b468e8f0895bb5eec018",
+      "equal": true
+    },
+    "assets/guild-master-painted.webp": {
+      "before": "1aaf598bae121c58bf9c5dbfc9af212a85432bed627f0cb24f70825e215a4747",
+      "after": "1aaf598bae121c58bf9c5dbfc9af212a85432bed627f0cb24f70825e215a4747",
+      "equal": true
+    },
+    "assets/hall-painted.webp": {
+      "before": "cf7485297ec78d27c2c3a57891e3c7d1f278b9d8767202121bc8813f6c733405",
+      "after": "cf7485297ec78d27c2c3a57891e3c7d1f278b9d8767202121bc8813f6c733405",
+      "equal": true
+    },
+    "assets/mage.svg": {
+      "before": "547ccdbcbe70150a08301d9547bfdaff15825c566c80245156999e86439d87e0",
+      "after": "547ccdbcbe70150a08301d9547bfdaff15825c566c80245156999e86439d87e0",
+      "equal": true
+    },
+    "assets/priest.svg": {
+      "before": "f7fb3a737c98a16e6913acbdcda46a0ff1632740ed86a95fb4153796453d7613",
+      "after": "f7fb3a737c98a16e6913acbdcda46a0ff1632740ed86a95fb4153796453d7613",
+      "equal": true
+    },
+    "assets/rogue.svg": {
+      "before": "f1c5f8cb455bed34c14ef5c08c0be63a8b7a525b3516b8c34cff0d0bdffd4dee",
+      "after": "f1c5f8cb455bed34c14ef5c08c0be63a8b7a525b3516b8c34cff0d0bdffd4dee",
+      "equal": true
+    },
+    "assets/warrior.svg": {
+      "before": "68021882ad694698b2c514d9c02e70e66e580f2181e623a2f6339a51c20334d0",
+      "after": "68021882ad694698b2c514d9c02e70e66e580f2181e623a2f6339a51c20334d0",
+      "equal": true
+    },
+    "combat.js": {
+      "before": "4d4bb72138e7e10d43d7a513051075d1d581f5426f1650ab864b29fdc6ecd9d0",
+      "after": "4d4bb72138e7e10d43d7a513051075d1d581f5426f1650ab864b29fdc6ecd9d0",
+      "equal": true
+    },
+    "game.js": {
+      "before": "20678b49c9cb70501705f3b4e89fb5d1d89b70c5b792e72cc0ba106e861ca6b8",
+      "after": "c479e8b760362b04c4b1f9ab1e2241e686fbf20e1da6d3c22be4594b13c30cac",
+      "equal": false
+    },
+    "hall-view.js": {
+      "before": "34957decba23d1a46e7f8b6dc5b5e6460b6ed1c21ddc0549b74e8ea00470ace7",
+      "after": "34957decba23d1a46e7f8b6dc5b5e6460b6ed1c21ddc0549b74e8ea00470ace7",
+      "equal": true
+    },
+    "hall.js": {
+      "before": "baf898378a4c3493cf9d1cccd613469168b1e9386d0c682cf24e7043e81c830d",
+      "after": "baf898378a4c3493cf9d1cccd613469168b1e9386d0c682cf24e7043e81c830d",
+      "equal": true
+    },
+    "index.html": {
+      "before": "b55c88dee1e0fc3a4998fa51907ef61ec3ac41e15c1f7315fd78f72c828b36de",
+      "after": "b15fc8136d5e7ebe0ff567d9a91687f814845854e308874d190071692148a799",
+      "equal": false
+    },
+    "living-hall.css": {
+      "before": "2189dd0661d2bf76c961c483f9f8c6ee61491bf8d396f6b7e1d215caabe4f210",
+      "after": "2189dd0661d2bf76c961c483f9f8c6ee61491bf8d396f6b7e1d215caabe4f210",
+      "equal": true
+    },
+    "rules.js": {
+      "before": "5dd127e7909e54ea64a37382bff4e91c9efc15c49081eaa07f23e9fbc49435f2",
+      "after": "3809581c12d0031b0bd4fc2642d2699975a4c44c9c133cd0c0be5ffba308f090",
+      "equal": false
+    },
+    "skills.js": {
+      "before": "d8aa248523ae0161ee552e920346b1cbb1832f2d1063ead24f46f30be8e9df8b",
+      "after": "d8aa248523ae0161ee552e920346b1cbb1832f2d1063ead24f46f30be8e9df8b",
+      "equal": true
+    },
+    "styles.css": {
+      "before": "e0bca83eadcd3d2917dd23021530615cfb70ae259cd08f9f83962725effdaef4",
+      "after": "e0bca83eadcd3d2917dd23021530615cfb70ae259cd08f9f83962725effdaef4",
+      "equal": true
+    },
+    "tests/assets-v3.test.py": {
+      "before": "681127b534fc14ead84db688c8daf847f29363d13d4ebb2b124147c2cddbc961",
+      "after": "681127b534fc14ead84db688c8daf847f29363d13d4ebb2b124147c2cddbc961",
+      "equal": true
+    },
+    "tests/combat_v01_rng_vectors.json": {
+      "before": "1a52da05580d2e1d3445dfb8be80f7c2702bff7e796dc83013003f2439183630",
+      "after": "1a52da05580d2e1d3445dfb8be80f7c2702bff7e796dc83013003f2439183630",
+      "equal": true
+    },
+    "tests/hall-v3.test.cjs": {
+      "before": "1cde861e7bbd6af171c4460620d72ebaf389a6dbac5fb8fa6bb775abb2afc02b",
+      "after": "1cde861e7bbd6af171c4460620d72ebaf389a6dbac5fb8fa6bb775abb2afc02b",
+      "equal": true
+    },
+    "tests/recruitment-v2.test.cjs": {
+      "before": "4a4c73a8124122ed748730ba0d3f966d626467d83f1418443799cc417915ecfb",
+      "after": "4a4c73a8124122ed748730ba0d3f966d626467d83f1418443799cc417915ecfb",
+      "equal": true
+    },
+    "tests/rules.test.cjs": {
+      "before": "da96bea7494dfede42dd97eb5bf5e16793da7e32607b58e10ddda67808d3efd3",
+      "after": "da96bea7494dfede42dd97eb5bf5e16793da7e32607b58e10ddda67808d3efd3",
+      "equal": true
+    },
+    "tests/run-all.py": {
+      "before": "e4612b15521cbfb3687857c5179c7f6414b3dd8499a65bd9eccec6578b34a966",
+      "after": "61aeea2fb8713aa4d331ef4dd1aa967a7ab91b55689f5fd7552726580e9b4589",
+      "equal": false
+    },
+    "tests/static-v2.test.py": {
+      "before": "ac3e60c5c48bba7c1c4b0bd7370ea930946b588b1a33ad1a066d8f4f1a890eb0",
+      "after": "ac3e60c5c48bba7c1c4b0bd7370ea930946b588b1a33ad1a066d8f4f1a890eb0",
+      "equal": true
+    },
+    "tests/ui-smoke.test.cjs": {
+      "before": "2b574d1dbd94ffa41b7d37828bbf867c63769e8f5064f430d7748855f71dfb02",
+      "after": "2b574d1dbd94ffa41b7d37828bbf867c63769e8f5064f430d7748855f71dfb02",
+      "equal": true
+    },
+    "tests/ui-v2.test.cjs": {
+      "before": "9975ed22909aa9c2c32bb7880fae703a6b2a47cd04e2eadc138ce1818713b360",
+      "after": "9975ed22909aa9c2c32bb7880fae703a6b2a47cd04e2eadc138ce1818713b360",
+      "equal": true
+    },
+    "tests/ui-v3.test.cjs": {
+      "before": "38139c2dcb53ada765987f6aef43b08bec0b47f6e62bc1f6fdd4acea495c08ad",
+      "after": "38139c2dcb53ada765987f6aef43b08bec0b47f6e62bc1f6fdd4acea495c08ad",
+      "equal": true
+    }
+  }
+}

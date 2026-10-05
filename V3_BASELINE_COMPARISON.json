@@ -1,0 +1,142 @@
+{
+  "basis": "GuildGame_Sprint11_BrowserPlaytest_V2.zip",
+  "files": {
+    ".nojekyll": {
+      "v2_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "v3_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "equal": true
+    },
+    "BROWSER_PLAYTEST_README.md": {
+      "v2_sha256": "d18414c62bf92dde6f05e83e84678a7bb3c5d17e5b29afc781e515bf1395a2d2",
+      "v3_sha256": "d18414c62bf92dde6f05e83e84678a7bb3c5d17e5b29afc781e515bf1395a2d2",
+      "equal": true
+    },
+    "BROWSER_PLAYTEST_TEST_OUTPUT.txt": {
+      "v2_sha256": "bdfdcd537a5950f30f7dc291a0241e4fdd184fd60242b9f0319648e0e1fb0dbc",
+      "v3_sha256": "bdfdcd537a5950f30f7dc291a0241e4fdd184fd60242b9f0319648e0e1fb0dbc",
+      "equal": true
+    },
+    "BROWSER_PLAYTEST_V2_REPORT.md": {
+      "v2_sha256": "40c2fa23af6783a30388ba75492647bc6cce7234bf021b9abbb7b4ccdf70b1e7",
+      "v3_sha256": "40c2fa23af6783a30388ba75492647bc6cce7234bf021b9abbb7b4ccdf70b1e7",
+      "equal": true
+    },
+    "BROWSER_PLAYTEST_V2_TEST_OUTPUT.txt": {
+      "v2_sha256": "26d0c5f7404272a958069613c04570c29f08402ececf4c5d40e91f0fe646a14f",
+      "v3_sha256": "26d0c5f7404272a958069613c04570c29f08402ececf4c5d40e91f0fe646a14f",
+      "equal": true
+    },
+    "assets/goblin-boss.svg": {
+      "v2_sha256": "a1e83ff4448828560882bdac26cdfa5872815b8f377895291992b849495b23e5",
+      "v3_sha256": "a1e83ff4448828560882bdac26cdfa5872815b8f377895291992b849495b23e5",
+      "equal": true
+    },
+    "assets/goblin-brute.svg": {
+      "v2_sha256": "91c480da631d3ab94e8046c2f8c60c0c54de8fcb97c13fa6d30b981364cc550d",
+      "v3_sha256": "91c480da631d3ab94e8046c2f8c60c0c54de8fcb97c13fa6d30b981364cc550d",
+      "equal": true
+    },
+    "assets/goblin-melee.svg": {
+      "v2_sha256": "4a513c140577df150ceed4ea5b90b60b69ca7841e14b76f4209a1baba035cf6b",
+      "v3_sha256": "4a513c140577df150ceed4ea5b90b60b69ca7841e14b76f4209a1baba035cf6b",
+      "equal": true
+    },
+    "assets/goblin-ranged.svg": {
+      "v2_sha256": "82669119463a109fbd757a0342044244b2c58fc76a6b06b180d2e6219fdbf3a8",
+      "v3_sha256": "82669119463a109fbd757a0342044244b2c58fc76a6b06b180d2e6219fdbf3a8",
+      "equal": true
+    },
+    "assets/guild-hall.svg": {
+      "v2_sha256": "696b508b8bec54f8d416ed8a4e918242b61f504af237b468e8f0895bb5eec018",
+      "v3_sha256": "696b508b8bec54f8d416ed8a4e918242b61f504af237b468e8f0895bb5eec018",
+      "equal": true
+    },
+    "assets/mage.svg": {
+      "v2_sha256": "547ccdbcbe70150a08301d9547bfdaff15825c566c80245156999e86439d87e0",
+      "v3_sha256": "547ccdbcbe70150a08301d9547bfdaff15825c566c80245156999e86439d87e0",
+      "equal": true
+    },
+    "assets/priest.svg": {
+      "v2_sha256": "f7fb3a737c98a16e6913acbdcda46a0ff1632740ed86a95fb4153796453d7613",
+      "v3_sha256": "f7fb3a737c98a16e6913acbdcda46a0ff1632740ed86a95fb4153796453d7613",
+      "equal": true
+    },
+    "assets/rogue.svg": {
+      "v2_sha256": "f1c5f8cb455bed34c14ef5c08c0be63a8b7a525b3516b8c34cff0d0bdffd4dee",
+      "v3_sha256": "f1c5f8cb455bed34c14ef5c08c0be63a8b7a525b3516b8c34cff0d0bdffd4dee",
+      "equal": true
+    },
+    "assets/warrior.svg": {
+      "v2_sha256": "68021882ad694698b2c514d9c02e70e66e580f2181e623a2f6339a51c20334d0",
+      "v3_sha256": "68021882ad694698b2c514d9c02e70e66e580f2181e623a2f6339a51c20334d0",
+      "equal": true
+    },
+    "combat.js": {
+      "v2_sha256": "4d4bb72138e7e10d43d7a513051075d1d581f5426f1650ab864b29fdc6ecd9d0",
+      "v3_sha256": "4d4bb72138e7e10d43d7a513051075d1d581f5426f1650ab864b29fdc6ecd9d0",
+      "equal": true
+    },
+    "game.js": {
+      "v2_sha256": "fa3b0a6a85c394f0f8ff057e80546a26960ed871eba59b0e97fc819c29b1bf42",
+      "v3_sha256": "20678b49c9cb70501705f3b4e89fb5d1d89b70c5b792e72cc0ba106e861ca6b8",
+      "equal": false
+    },
+    "index.html": {
+      "v2_sha256": "6d6c8847bbbff19f0f8e3db89ddeccd88ff0ffdcbe0acc74a442619d5c562996",
+      "v3_sha256": "b55c88dee1e0fc3a4998fa51907ef61ec3ac41e15c1f7315fd78f72c828b36de",
+      "equal": false
+    },
+    "rules.js": {
+      "v2_sha256": "5dd127e7909e54ea64a37382bff4e91c9efc15c49081eaa07f23e9fbc49435f2",
+      "v3_sha256": "5dd127e7909e54ea64a37382bff4e91c9efc15c49081eaa07f23e9fbc49435f2",
+      "equal": true
+    },
+    "skills.js": {
+      "v2_sha256": "d8aa248523ae0161ee552e920346b1cbb1832f2d1063ead24f46f30be8e9df8b",
+      "v3_sha256": "d8aa248523ae0161ee552e920346b1cbb1832f2d1063ead24f46f30be8e9df8b",
+      "equal": true
+    },
+    "styles.css": {
+      "v2_sha256": "e0bca83eadcd3d2917dd23021530615cfb70ae259cd08f9f83962725effdaef4",
+      "v3_sha256": "e0bca83eadcd3d2917dd23021530615cfb70ae259cd08f9f83962725effdaef4",
+      "equal": true
+    },
+    "tests/combat_v01_rng_vectors.json": {
+      "v2_sha256": "1a52da05580d2e1d3445dfb8be80f7c2702bff7e796dc83013003f2439183630",
+      "v3_sha256": "1a52da05580d2e1d3445dfb8be80f7c2702bff7e796dc83013003f2439183630",
+      "equal": true
+    },
+    "tests/recruitment-v2.test.cjs": {
+      "v2_sha256": "4a4c73a8124122ed748730ba0d3f966d626467d83f1418443799cc417915ecfb",
+      "v3_sha256": "4a4c73a8124122ed748730ba0d3f966d626467d83f1418443799cc417915ecfb",
+      "equal": true
+    },
+    "tests/rules.test.cjs": {
+      "v2_sha256": "da96bea7494dfede42dd97eb5bf5e16793da7e32607b58e10ddda67808d3efd3",
+      "v3_sha256": "da96bea7494dfede42dd97eb5bf5e16793da7e32607b58e10ddda67808d3efd3",
+      "equal": true
+    },
+    "tests/static-v2.test.py": {
+      "v2_sha256": "ac3e60c5c48bba7c1c4b0bd7370ea930946b588b1a33ad1a066d8f4f1a890eb0",
+      "v3_sha256": "ac3e60c5c48bba7c1c4b0bd7370ea930946b588b1a33ad1a066d8f4f1a890eb0",
+      "equal": true
+    },
+    "tests/ui-smoke.test.cjs": {
+      "v2_sha256": "2b574d1dbd94ffa41b7d37828bbf867c63769e8f5064f430d7748855f71dfb02",
+      "v3_sha256": "2b574d1dbd94ffa41b7d37828bbf867c63769e8f5064f430d7748855f71dfb02",
+      "equal": true
+    },
+    "tests/ui-v2.test.cjs": {
+      "v2_sha256": "9975ed22909aa9c2c32bb7880fae703a6b2a47cd04e2eadc138ce1818713b360",
+      "v3_sha256": "9975ed22909aa9c2c32bb7880fae703a6b2a47cd04e2eadc138ce1818713b360",
+      "equal": true
+    }
+  },
+  "byte_equal": 24,
+  "changed": [
+    "game.js",
+    "index.html"
+  ],
+  "unity_baseline_files_compared": 332,
+  "unity_byte_equal": 332
+}
