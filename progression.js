@@ -19,7 +19,7 @@ const next=s=>{const l=guildLevel(s),n=config.guild[l];return n?{...n,level:l+1,
 const suitability=(a,def)=>{const it=typeof def==='string'?R.item(def):def;return it?it.values.reduce((n,v,i)=>n+((R.classes[a.cls].roles&(1<<i))?v:0),0):0;};
 function power(a,gear=a.gear){const b=R.classes[a.cls],c=config.power;return Math.round(b.hp*c.hp+b.attack*c.attack+b.defense*c.defense+c.perLevel*(a.level-1)+c.suitability*Object.values(gear).filter(Boolean).reduce((n,e)=>n+suitability(a,e.def),0));}
 const partyPower=(s,p,now=1000)=>p?p.members.map(id=>s.members.find(a=>a.id===id)).filter(a=>a&&R.available(a,now)).reduce((n,a)=>n+power(a),0):0;
-const tier=q=>config.tiers.find(t=>t.id===q.tier)||config.tiers[0];
+const tier=q=>{const t=config.tiers.find(t=>t.id===q.tier)||config.tiers[0];return q.dynamic?{...t,recommended:q.recommended,gold:q.gold,xp:q.xp,duration:q.duration,guildXP:q.dynamic.guildXP,drop:q.dynamic.drop,rarities:q.dynamic.rarities}:t;};
 const risk=(strength,recommended)=>({...config.risk.find(r=>strength/recommended>=r.min),ratio:strength/recommended,delta:strength-recommended,warn:strength/recommended<.9});
 function decorate(s){for(const q of s.quests)if(!q.tier){const t=config.tiers[(Number(q.id.slice(-12))-1)%config.tiers.length];Object.assign(q,{tier:t.id,recommended:t.recommended,gold:t.gold,xp:t.xp,duration:t.duration});}return s;}
 function loot(q,u){const t=tier(q),out=[];for(const b of [...bases,R.item('item.potion.healing.basic')]){if(u('v4.loot/'+b.id+'/drop')>=t.drop)continue;let def=b.id;if(b.slot){const r=u('v4.loot/'+b.id+'/rarity'),rarity=r<t.rarities[0]?0:r<t.rarities[0]+t.rarities[1]?1:2;def=rarity?b.id.replace(/\.common$/,rarity===1?'.uncommon':'.rare'):b.id;}out.push({def,qty:b.slot?1:2});}return out;}

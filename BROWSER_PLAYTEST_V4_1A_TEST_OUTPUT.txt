@@ -1,0 +1,440 @@
+
+COMMAND: node tests/rules.test.cjs
+PASS SHA256 known answer
+PASS five unique F1 candidates and guaranteed roles
+PASS recruitment seed reproducible
+PASS exactly three candidates required
+PASS duplicate candidate rejected
+PASS recruit once
+PASS one-to-six member group
+PASS global membership and duplicate add
+PASS transfer atomically clears old leader
+PASS failed transfer no partial state
+PASS pending resolution retains party/member/leader locks
+PASS three pending quests block fourth
+PASS dead or injured cannot start
+PASS same quest simulation input yields same result
+PASS resolve only pending and once
+PASS rewards once and pure result before applying
+PASS later death does not invalidate stored positive XP
+PASS F10 cap and multi-level award
+PASS wounded can equip; dead cannot; item conservation
+PASS equal current equipment retained and stock tie-break stable
+PASS potion priority healer then leader; no shortage block
+PASS resolve returns unused potions
+PASS forced wipe assigns zero XP and death
+PASS combat complete golden vector seed 0
+PASS combat complete golden vector seed 1
+PASS combat complete golden vector seed 7
+PASS combat complete golden vector seed 18446744073709551615
+PASS combat pause has no authoritative change
+PASS combat time partition and speeds preserve result
+PASS combat duplicate ids and zero HP rejected
+Browser model: 30 passed, 0 failed
+EXIT_CODE=0
+
+COMMAND: node tests/recruitment-v2.test.cjs
+PASS starter 3 of 5 free, first paid pool free
+PASS normal pool and cost unavailable before starter
+PASS all candidate IDs unique across starter and normal pools
+PASS F1 recruit exactly 50 gold and one member
+PASS insufficient gold hire atomic
+PASS refresh exactly 25 gold and replace five
+PASS insufficient gold refresh atomic
+PASS same recruit request cannot be charged twice
+PASS same refresh request cannot be charged twice
+PASS stale candidate after refresh rejected
+PASS twelve member guild blocks recruitment
+PASS dead member still occupies slot until confirmed removal
+PASS confirmed removal frees capacity and allows hire
+PASS living members cannot be removed
+PASS dead removal clears leader and dissolves empty party
+PASS dead removal retains other party members and clears leader
+PASS dead removal returns gear and potion exactly once
+PASS quest-bound dead member cannot be removed
+PASS pending historical rewards must be collected before removing dead
+PASS quest gold funds recruitment without new reward values
+PASS refresh supports repeated funded rounds deterministically
+Recruitment V2: 21 passed, 0 failed
+EXIT_CODE=0
+
+COMMAND: node tests/ui-smoke.test.cjs
+Presentation stub: 20 checks passed. Real Safari/layout/WebMCP validation not performed.
+EXIT_CODE=0
+
+COMMAND: node tests/ui-v2.test.cjs
+PASS normal recruitment UI includes price, pool and refresh
+PASS double-tap hire only debits once and updates resources
+PASS double-tap refresh guarded even against new-pool click
+PASS insufficient gold shows readable feedback
+PASS dead removal opens confirmation and does not remove until confirmed
+PASS archived name remains readable on historical quest result
+PASS combat animation follows existing events without guild mutation
+PASS reduced-motion disables action effects, same combat state
+PASS pause changes no combat state; navigation resumes guild
+PASS TechnicalAbort is labeled as technical in arena
+V2 presentation stub: 10 passed, 0 failed. No real layout/browser execution.
+EXIT_CODE=0
+
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 tests/static-v2.test.py
+PASS index dependencies relative and exist
+PASS repository subpath preserved
+PASS all four class and four enemy portraits exist
+PASS nine local SVGs well-formed
+PASS hall asset exists
+PASS CSS image paths local and exist
+PASS no localhost, file paths or runtime server API
+PASS landscape responsive rules present
+PASS safe area and dynamic viewport configured
+PASS main buttons 48px and hall targets at least 44px
+PASS reduced motion CSS and effects guard
+PASS navigation has all seven screens
+PASS visual effects bounded per tick and card
+PASS root Pages marker included
+Static V2: 14 passed. No browser layout/iPhone measurement.
+EXIT_CODE=0
+
+COMMAND: node tests/hall-v3.test.cjs
+PASS only actual live members appear
+PASS empty guild has no invented NPCs
+PASS all 12 members supported
+PASS initial active participants absent
+PASS initial pending participants absent
+PASS read-only frozen gameplay input survives animation
+PASS snapshots cannot mutate model
+PASS all waypoint pairs connected with valid graph destinations
+PASS unknown destination rejected
+PASS new recruit starts at entrance
+PASS arrival starts articulated walking then activity
+PASS idle advances through Walk and Activity
+PASS movement positions remain inside hall
+PASS facing follows horizontal movement
+PASS injured resident targets resting seat
+PASS injured walking is slower
+PASS recovery expiry restores normal activity without gameplay mutation
+PASS quest start gathers actual participants only
+PASS departure reaches movement and clears within bounded visual duration
+PASS active members do not respawn after visual departure
+PASS pending does not return or unlock members
+PASS resolved survivors return through entrance
+PASS resolved dead members never return
+PASS injured return heads to rest
+PASS death while moving removes resident immediately
+PASS roster removal removes resident
+PASS foreground is larger and above rear actors
+PASS shared activity triggers visual conversation
+PASS injured actors excluded from conversation
+PASS reduced motion places arrivals immediately
+PASS reduced motion removes departures without game mutation
+PASS visual RNG reproducible and isolated
+PASS invalid animation deltas rejected
+Hall V3: 33 passed, 0 failed. Presentation model only.
+EXIT_CODE=0
+
+COMMAND: node tests/ui-v3.test.cjs
+PASS empty hall renders painterly scene and zero residents
+PASS existing members rendered with names and six articulated pieces
+PASS dead member omitted in full-script hall renderer
+PASS resident uses pixel transform coordinates and depth
+PASS recruitment debits 50 and new resident enters hall
+PASS recovery expiry updates renderer without navigation
+PASS quest start returns hall and begins departure
+PASS animation frames do not change authoritative game values
+PASS clicking resident opens roster through ordinary navigation
+PASS object hotspots expose all six navigation destinations
+PASS navigation away and back reconstructs presentation only
+V3 integration DOM stub: 11 passed, 0 failed. No rendered layout or touch test.
+EXIT_CODE=0
+
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 tests/assets-v3.test.py
+PASS relative exact-case asset assets/adventurers-painted.webp
+PASS relative exact-case asset assets/goblin-boss.svg
+PASS relative exact-case asset assets/goblin-brute.svg
+PASS relative exact-case asset assets/goblin-melee.svg
+PASS relative exact-case asset assets/goblin-ranged.svg
+PASS relative exact-case asset assets/guild-hall.svg
+PASS relative exact-case asset assets/guild-master-painted.webp
+PASS relative exact-case asset assets/hall-painted.webp
+PASS relative exact-case asset assets/mage.svg
+PASS relative exact-case asset assets/priest.svg
+PASS relative exact-case asset assets/rogue.svg
+PASS relative exact-case asset assets/warrior.svg
+PASS relative exact-case asset combat.js
+PASS relative exact-case asset game.js
+PASS relative exact-case asset hall-view.js
+PASS relative exact-case asset hall.js
+PASS relative exact-case asset living-hall.css
+PASS relative exact-case asset progression.css
+PASS relative exact-case asset progression.js
+PASS relative exact-case asset recruitment.js
+PASS relative exact-case asset rules.js
+PASS relative exact-case asset save.js
+PASS relative exact-case asset skills.js
+PASS relative exact-case asset styles.css
+PASS WebP container hall-painted.webp
+PASS WebP container adventurers-painted.webp
+PASS WebP container guild-master-painted.webp
+PASS three foreground occlusion masks
+PASS transform movement and 30fps DOM draw budget
+PASS opposite leg phase uses delay
+PASS six object bound touch targets
+PASS reduced motion disables decorative animation
+PASS periodic recovery synchronization
+PASS no remote runtime dependencies
+PASS new art under 1.2MB
+PASS hall modules precede game
+V3 asset/source checks: 36 passed. No browser rendering verified.
+EXIT_CODE=0
+
+COMMAND: node tests/progression-v4.test.cjs
+PASS initial guild level and independent XP
+PASS exact guild threshold boundaries
+PASS all five capacity rows exact
+PASS power uses documented class base
+PASS level gives exactly 25 management power
+PASS empty and equipped power deterministic
+PASS power calculation does not mutate members
+PASS comparison previews exact manual equip result
+PASS downgrade comparison has negative delta
+PASS equal comparison is neutral
+PASS equipment transfer conserves exact instances
+PASS incompatible manual equip is atomic
+PASS dead member cannot equip
+PASS injured unbound member may equip
+PASS quest-bound member cannot equip
+PASS sell removes item and credits exact value
+PASS repeated sale cannot duplicate gold
+PASS equipped item cannot be sold
+PASS Rare sale requires explicit confirmation
+PASS sell values are central and slot dependent
+PASS catalog limited to three rarities, no combat stats added
+PASS auto equip role before rarity and stable equal current
+PASS all four quest tiers offered at guild level one
+PASS offers independent of current power
+PASS quest metadata derived from config
+PASS fresh offers replace only available ones
+PASS party power sums only available members
+PASS all risk boundaries exact
+PASS weak party start requires confirmation
+PASS start preview includes auto equipment without state mutation
+PASS preview accounts for new stock strength
+PASS difficulty increases actual overload
+PASS equipment raises actual quest strength
+PASS harder success increases gold XP guildXP
+PASS rarity loot follows tier weights
+PASS higher tier increases drop probability
+PASS same input produces same extended quest result
+PASS successful reward guild XP separate from character XP
+PASS duplicate reward cannot duplicate guild XP or loot
+PASS failed quest grants no guild XP
+PASS wipe remains all dead with zero member XP
+PASS guild level up preserves existing group and is once
+PASS guild XP capped at 1000 without duplicate unlock application
+PASS next unlock lists actual deltas
+PASS recruitment uses every unlocked capacity
+PASS locked group slot rejected
+PASS second group unlocked at guild level two
+PASS mission cap includes pending and reports correct reason
+PASS four concurrent missions allowed only at level five
+PASS pending member and leader locks preserved
+PASS invalid sale leaves existing quest and guild progress untouched
+PASS character thresholds and skill points unchanged
+PASS combat profiles remain original values
+PASS combat complete golden vector seed 0
+PASS combat complete golden vector seed 1
+PASS combat complete golden vector seed 7
+PASS combat complete golden vector seed 18446744073709551615
+PASS combat pause has no authoritative change
+PASS combat time partition and speeds preserve result
+PASS combat duplicate ids and zero HP rejected
+V4 progression: 60 passed, 0 failed
+EXIT_CODE=0
+
+COMMAND: node tests/ui-v4.test.cjs
+PASS header exposes guild level XP and dynamic capacity
+PASS roster displays rank and level separately plus strength
+PASS guild details show next unlocks exactly
+PASS all difficulty cards expose strength risk and rewards
+PASS party page shows locked future slots
+PASS comparison previews all role values and positive arrow
+PASS manual equipment uses selected member and closes comparison
+PASS downgrade shows red and minus arrow
+PASS rare sale opens confirmation and does not mutate until confirmed
+PASS double sale click never awards twice
+PASS weak start opens warning then confirmation starts
+PASS full guild shows current and next capacity
+PASS quest reward level-up unlocks exactly once in UI
+PASS twenty members can render in growing hall
+V4 UI DOM stub: 14 passed, 0 failed. No rendered browser/device claim.
+EXIT_CODE=0
+
+COMMAND: node tests/loop-v4.test.cjs
+PASS complete progression loop unlocks level five with no artificial XP or gold
+PASS level-up preserves another pending mission and its locks
+PASS failed warning is atomic including equip and potion preparation
+PASS level four blocks fourth mission even with four groups
+PASS positive result XP survives later death without life overwrite
+PASS duplicate item identity aborts sell without partial gold
+PASS single potion sale is quantity guarded and exactly once
+PASS assigned potion cannot be sold from empty storage
+V4 loop: 8 passed, 0 failed
+EXIT_CODE=0
+
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 tests/assets-v4.test.py
+PASS relative exact-case dependency assets/adventurers-painted.webp
+PASS relative exact-case dependency assets/guild-hall.svg
+PASS relative exact-case dependency assets/guild-master-painted.webp
+PASS relative exact-case dependency assets/hall-painted.webp
+PASS relative exact-case dependency combat.js
+PASS relative exact-case dependency game.js
+PASS relative exact-case dependency hall-view.js
+PASS relative exact-case dependency hall.js
+PASS relative exact-case dependency living-hall.css
+PASS relative exact-case dependency progression.css
+PASS relative exact-case dependency progression.js
+PASS relative exact-case dependency recruitment.js
+PASS relative exact-case dependency rules.js
+PASS relative exact-case dependency save.js
+PASS relative exact-case dependency skills.js
+PASS relative exact-case dependency styles.css
+PASS progression loads after rules before game
+PASS no backend or machine-local runtime paths
+PASS only requested local save backend
+PASS rank-level UI separate
+PASS positive negative neutral markers
+PASS dynamic capacities in authoritative V4 paths
+PASS Pages root entry and marker
+V4 asset/source: 23 passed. No rendered layout/device test.
+EXIT_CODE=0
+
+COMMAND: node tests/save-v41.test.cjs
+PASS no save yields empty without writing
+PASS full initial state roundtrip
+PASS recruited state roundtrip identical
+PASS gold persists
+PASS guild XP and derived level persist
+PASS member XP level and derived skills persist
+PASS parties members leader persist
+PASS stock equipment and potions persist
+PASS pool sequence candidates and level origin persist
+PASS active quest and potion binding roundtrip
+PASS offline completed becomes pending, never resolved
+PASS offline partial progress exact
+PASS clock moving backward grants no negative time
+PASS pending status persists and stays locked
+PASS resolved unpaid result roundtrip
+PASS paid reward cannot repeat after reload
+PASS injured recovery deadline persists through offline time
+PASS dead member persists and is unavailable
+PASS counter-based IDs remain unique after reload and refresh
+PASS previous valid primary retained as backup
+PASS corrupt primary loads valid backup and preserves raw primary
+PASS both corrupt safely block autosave with original bytes intact
+PASS valid import replaces only after validation
+PASS invalid import leaves storage/current object unchanged
+PASS unknown version rejected with no migration guesses
+PASS unexpected persistent fields rejected
+PASS invalid class rejected
+PASS invalid XP level relation rejected
+PASS invalid guild XP level relation rejected
+PASS duplicate member IDs rejected
+PASS unknown member ID rejected
+PASS unknown group reference rejected
+PASS leader outside group rejected
+PASS active binding cannot disappear
+PASS counter rollback rejected
+PASS duplicate item location rejected
+PASS rarity mismatch rejected
+PASS unpaid unresolved quest with reward rejected
+PASS reward amount manipulation rejected
+PASS export is portable validated JSON and no runtime objects
+PASS delete requires confirmation
+PASS quota error does not replace primary
+PASS storage access denied is explicit
+PASS second tab stale writer cannot overwrite newer state
+PASS oversized import rejected
+PASS resolved removed member history remains loadable
+V4.1A save: 46 passed, 0 failed
+EXIT_CODE=0
+
+COMMAND: node tests/recruitment-v41.test.cjs
+PASS starter five F Level 1, three free and normal pool five
+PASS guild level 1 obeys configured recruit range over 200 pools
+PASS guild level 2 obeys configured recruit range over 200 pools
+PASS guild level 3 obeys configured recruit range over 200 pools
+PASS guild level 4 obeys configured recruit range over 200 pools
+PASS guild level 5 obeys configured recruit range over 200 pools
+PASS weights strictly favor lower levels and maximum rare
+PASS prices exact and increasing, F1 stays 50
+PASS same pool sequence and guild level reproducible
+PASS old pool does not silently upgrade on guild level change
+PASS insufficient gold uses exact candidate price atomically
+PASS successful high-level purchase debits and adds once
+PASS current guild capacity still blocks without debit
+PASS higher recruit power uses unchanged V4 formula and derived skills
+PASS pool origin range survives guild advancement save
+V4.1A recruitment: 15 passed, 0 failed
+EXIT_CODE=0
+
+COMMAND: node tests/ui-v41.test.cjs
+PASS starter transaction autosaves and reload restores same guild
+PASS failed purchase performs no autosave
+PASS successful high level hire autosaves real price and level
+PASS member UI shows rank level local XP and strength
+PASS group selection lists level strength roles and status
+PASS formed group shows strength average and role coverage
+PASS recruit cards show actual higher levels power and price
+PASS manual save and export produce validated portable JSON
+PASS invalid import cannot replace current state or save
+PASS valid import commits storage before replacing UI state
+PASS new guild requires confirmation and clears prior backup
+PASS corrupt saves show blocking explanation and remain untouched
+PASS reward autosave cannot repay after actual reload harness
+V4.1A UI DOM stub: 13 passed, 0 failed. No real Safari/download test.
+EXIT_CODE=0
+
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 tests/assets-v41.test.py
+PASS save scripts ordered
+PASS painted hall and master atlas remain present
+PASS hall uses painted environment
+PASS save state owns grid row
+PASS mobile grid supports save status
+PASS file input JSON and local export
+PASS save schema version declared
+PASS separate primary and backup keys
+PASS known migration and validation API
+PASS no remote save or cloud endpoint
+PASS persistent save feedback exists
+PASS level average role and XP labels
+PASS prices come from candidate function
+V4.1A source/assets: 13 passed. No visual/device execution.
+EXIT_CODE=0
+
+COMMAND: node --check combat.js
+EXIT_CODE=0
+
+COMMAND: node --check game.js
+EXIT_CODE=0
+
+COMMAND: node --check hall-view.js
+EXIT_CODE=0
+
+COMMAND: node --check hall.js
+EXIT_CODE=0
+
+COMMAND: node --check progression.js
+EXIT_CODE=0
+
+COMMAND: node --check recruitment.js
+EXIT_CODE=0
+
+COMMAND: node --check rules.js
+EXIT_CODE=0
+
+COMMAND: node --check save.js
+EXIT_CODE=0
+
+COMMAND: node --check skills.js
+EXIT_CODE=0
+
+FAILED_COMMANDS=0

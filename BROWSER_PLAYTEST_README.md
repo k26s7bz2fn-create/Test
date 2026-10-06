@@ -1,3 +1,9 @@
+# Aktueller Einstieg: V4.1B
+
+Bitte zuerst `V4_1B_START_HERE.md` lesen. Die folgende ursprüngliche Anleitung beschreibt den historischen ersten Browser-Playtest; ihre Angaben zu Version, Save und Balance sind nicht der aktuelle V4.1B-Stand.
+
+---
+
 # Die Gilde – Browser-Playtest V2
 
 Eigenständiges HTML/CSS/JavaScript-Spiel für Safari im iPhone-Querformat und Desktop. Kein Unity-Build. Keine externen Assets, Server-API oder CDN-Abhängigkeiten.

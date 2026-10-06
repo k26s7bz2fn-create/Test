@@ -1,0 +1,439 @@
+{
+  "baseline": "GuildGame_BrowserPlaytest_V4_1A_PersistentProgression.zip",
+  "baseline_zip_sha256": "7a6a4442b2d03f27cfaacce769338505dbf4c997fefbc8d0772099f137c18a1e",
+  "comparison_scope": "All files except this comparison file itself",
+  "summary": {
+    "unchanged": 51,
+    "modified": 9,
+    "added": 11,
+    "removed": 0
+  },
+  "files": [
+    {
+      "path": ".nojekyll",
+      "status": "unchanged",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "v41b_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_README.md",
+      "status": "modified",
+      "baseline_sha256": "d18414c62bf92dde6f05e83e84678a7bb3c5d17e5b29afc781e515bf1395a2d2",
+      "v41b_sha256": "94909111a17834ee84876382e3c8b64fdb54f92919c8f702cfc70bcc5326963f"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "bdfdcd537a5950f30f7dc291a0241e4fdd184fd60242b9f0319648e0e1fb0dbc",
+      "v41b_sha256": "bdfdcd537a5950f30f7dc291a0241e4fdd184fd60242b9f0319648e0e1fb0dbc"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V2_REPORT.md",
+      "status": "unchanged",
+      "baseline_sha256": "40c2fa23af6783a30388ba75492647bc6cce7234bf021b9abbb7b4ccdf70b1e7",
+      "v41b_sha256": "40c2fa23af6783a30388ba75492647bc6cce7234bf021b9abbb7b4ccdf70b1e7"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V2_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "26d0c5f7404272a958069613c04570c29f08402ececf4c5d40e91f0fe646a14f",
+      "v41b_sha256": "26d0c5f7404272a958069613c04570c29f08402ececf4c5d40e91f0fe646a14f"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V3_LIVING_HALL_REPORT.md",
+      "status": "unchanged",
+      "baseline_sha256": "cf156f6d235e91eaa45727b7a2af74a9ded2a7dfe20ec0e27931a38ccd2ec0c3",
+      "v41b_sha256": "cf156f6d235e91eaa45727b7a2af74a9ded2a7dfe20ec0e27931a38ccd2ec0c3"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V3_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "92d7e837861507f3d132a1dbe760dc7743d878da1e02b524f4ffbec4089b25dc",
+      "v41b_sha256": "92d7e837861507f3d132a1dbe760dc7743d878da1e02b524f4ffbec4089b25dc"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_1A_REPORT.md",
+      "status": "unchanged",
+      "baseline_sha256": "4924127e83a8138ec2ee43b50677e4f080fb547c9a1f8eb52675d9ce18136305",
+      "v41b_sha256": "4924127e83a8138ec2ee43b50677e4f080fb547c9a1f8eb52675d9ce18136305"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_1A_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "723909c017018d72969678b696e98c5e936d5ef368ae753a2a98852f0e60f954",
+      "v41b_sha256": "723909c017018d72969678b696e98c5e936d5ef368ae753a2a98852f0e60f954"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_1B_REPORT.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "4f580bf51e7af9f187bc0d4f894134ab0bd96691fcaa6e58fa1bf840ac95e93b"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_1B_TEST_OUTPUT.txt",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "5d798127400d2f48597048d17a8cc9dd533405c88cceee806f0b65a0424e0573"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_PROGRESSION_REPORT.md",
+      "status": "unchanged",
+      "baseline_sha256": "9fac8fe4909b04ff9b476e5c1891c24376feeda4f33a400a717375c141bc1a28",
+      "v41b_sha256": "9fac8fe4909b04ff9b476e5c1891c24376feeda4f33a400a717375c141bc1a28"
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "35691b55ba826407ae08621fa8d72c1bf95d19e6b67686176d55c06f9678e3da",
+      "v41b_sha256": "35691b55ba826407ae08621fa8d72c1bf95d19e6b67686176d55c06f9678e3da"
+    },
+    {
+      "path": "V3_BASELINE_COMPARISON.json",
+      "status": "unchanged",
+      "baseline_sha256": "2842b7345e1a20879de8891e73e1a8acfae05e517edaafb6a786e480a9367e43",
+      "v41b_sha256": "2842b7345e1a20879de8891e73e1a8acfae05e517edaafb6a786e480a9367e43"
+    },
+    {
+      "path": "V3_START_HERE.md",
+      "status": "unchanged",
+      "baseline_sha256": "cacbca77181a5e590e2de8c05c3433c4f6faa06d0c1673752beaf6a3393ebdf9",
+      "v41b_sha256": "cacbca77181a5e590e2de8c05c3433c4f6faa06d0c1673752beaf6a3393ebdf9"
+    },
+    {
+      "path": "V4_1A_BASELINE_COMPARISON.json",
+      "status": "unchanged",
+      "baseline_sha256": "269a9d100a47a6c87b607de440bba8f08c2847e12992ba02bc9b5a31434b6e35",
+      "v41b_sha256": "269a9d100a47a6c87b607de440bba8f08c2847e12992ba02bc9b5a31434b6e35"
+    },
+    {
+      "path": "V4_1A_START_HERE.md",
+      "status": "unchanged",
+      "baseline_sha256": "2c00b02a9a3d845c0894d92b9825ca272c537526b3a561b2d6ca0b4228718201",
+      "v41b_sha256": "2c00b02a9a3d845c0894d92b9825ca272c537526b3a561b2d6ca0b4228718201"
+    },
+    {
+      "path": "V4_1B_START_HERE.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "cb564c5a8bd70ade3388b4fede0d69ba730fe810f63429fc47978fda2406bea5"
+    },
+    {
+      "path": "V4_BASELINE_COMPARISON.json",
+      "status": "unchanged",
+      "baseline_sha256": "cc7417adfa91929f0b50ff9310e1f489d85438c6fb59f0dc99883a3491482aa5",
+      "v41b_sha256": "cc7417adfa91929f0b50ff9310e1f489d85438c6fb59f0dc99883a3491482aa5"
+    },
+    {
+      "path": "V4_START_HERE.md",
+      "status": "unchanged",
+      "baseline_sha256": "092552be8b5ce3b64544ef5f87813f14edb9e015cd8f7663ede255511bc4fd12",
+      "v41b_sha256": "092552be8b5ce3b64544ef5f87813f14edb9e015cd8f7663ede255511bc4fd12"
+    },
+    {
+      "path": "assets/adventurers-painted.webp",
+      "status": "unchanged",
+      "baseline_sha256": "a9f2ac93e4f8f59b310baeadc63130531ed3387a5718b840e366bf69b6d127e7",
+      "v41b_sha256": "a9f2ac93e4f8f59b310baeadc63130531ed3387a5718b840e366bf69b6d127e7"
+    },
+    {
+      "path": "assets/goblin-boss.svg",
+      "status": "unchanged",
+      "baseline_sha256": "a1e83ff4448828560882bdac26cdfa5872815b8f377895291992b849495b23e5",
+      "v41b_sha256": "a1e83ff4448828560882bdac26cdfa5872815b8f377895291992b849495b23e5"
+    },
+    {
+      "path": "assets/goblin-brute.svg",
+      "status": "unchanged",
+      "baseline_sha256": "91c480da631d3ab94e8046c2f8c60c0c54de8fcb97c13fa6d30b981364cc550d",
+      "v41b_sha256": "91c480da631d3ab94e8046c2f8c60c0c54de8fcb97c13fa6d30b981364cc550d"
+    },
+    {
+      "path": "assets/goblin-melee.svg",
+      "status": "unchanged",
+      "baseline_sha256": "4a513c140577df150ceed4ea5b90b60b69ca7841e14b76f4209a1baba035cf6b",
+      "v41b_sha256": "4a513c140577df150ceed4ea5b90b60b69ca7841e14b76f4209a1baba035cf6b"
+    },
+    {
+      "path": "assets/goblin-ranged.svg",
+      "status": "unchanged",
+      "baseline_sha256": "82669119463a109fbd757a0342044244b2c58fc76a6b06b180d2e6219fdbf3a8",
+      "v41b_sha256": "82669119463a109fbd757a0342044244b2c58fc76a6b06b180d2e6219fdbf3a8"
+    },
+    {
+      "path": "assets/guild-hall.svg",
+      "status": "unchanged",
+      "baseline_sha256": "696b508b8bec54f8d416ed8a4e918242b61f504af237b468e8f0895bb5eec018",
+      "v41b_sha256": "696b508b8bec54f8d416ed8a4e918242b61f504af237b468e8f0895bb5eec018"
+    },
+    {
+      "path": "assets/guild-master-painted.webp",
+      "status": "unchanged",
+      "baseline_sha256": "1aaf598bae121c58bf9c5dbfc9af212a85432bed627f0cb24f70825e215a4747",
+      "v41b_sha256": "1aaf598bae121c58bf9c5dbfc9af212a85432bed627f0cb24f70825e215a4747"
+    },
+    {
+      "path": "assets/hall-painted.webp",
+      "status": "unchanged",
+      "baseline_sha256": "cf7485297ec78d27c2c3a57891e3c7d1f278b9d8767202121bc8813f6c733405",
+      "v41b_sha256": "cf7485297ec78d27c2c3a57891e3c7d1f278b9d8767202121bc8813f6c733405"
+    },
+    {
+      "path": "assets/mage.svg",
+      "status": "unchanged",
+      "baseline_sha256": "547ccdbcbe70150a08301d9547bfdaff15825c566c80245156999e86439d87e0",
+      "v41b_sha256": "547ccdbcbe70150a08301d9547bfdaff15825c566c80245156999e86439d87e0"
+    },
+    {
+      "path": "assets/priest.svg",
+      "status": "unchanged",
+      "baseline_sha256": "f7fb3a737c98a16e6913acbdcda46a0ff1632740ed86a95fb4153796453d7613",
+      "v41b_sha256": "f7fb3a737c98a16e6913acbdcda46a0ff1632740ed86a95fb4153796453d7613"
+    },
+    {
+      "path": "assets/rogue.svg",
+      "status": "unchanged",
+      "baseline_sha256": "f1c5f8cb455bed34c14ef5c08c0be63a8b7a525b3516b8c34cff0d0bdffd4dee",
+      "v41b_sha256": "f1c5f8cb455bed34c14ef5c08c0be63a8b7a525b3516b8c34cff0d0bdffd4dee"
+    },
+    {
+      "path": "assets/warrior.svg",
+      "status": "unchanged",
+      "baseline_sha256": "68021882ad694698b2c514d9c02e70e66e580f2181e623a2f6339a51c20334d0",
+      "v41b_sha256": "68021882ad694698b2c514d9c02e70e66e580f2181e623a2f6339a51c20334d0"
+    },
+    {
+      "path": "combat.js",
+      "status": "unchanged",
+      "baseline_sha256": "4d4bb72138e7e10d43d7a513051075d1d581f5426f1650ab864b29fdc6ecd9d0",
+      "v41b_sha256": "4d4bb72138e7e10d43d7a513051075d1d581f5426f1650ab864b29fdc6ecd9d0"
+    },
+    {
+      "path": "dynamic-quests.js",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "e9098507d9e57934803d6b10966cd5ec3ea3a9e8c4edc54cee9c8e07a4df28c5"
+    },
+    {
+      "path": "game.js",
+      "status": "modified",
+      "baseline_sha256": "fc0c40658942624741eddbbf74fa3584b62195cf7cee217a9fb9156ec22dd3e5",
+      "v41b_sha256": "3c9ddacd639dd74b4276100bba321b50c64d8d1adfda60280853c3bae041933d"
+    },
+    {
+      "path": "hall-view.js",
+      "status": "unchanged",
+      "baseline_sha256": "34957decba23d1a46e7f8b6dc5b5e6460b6ed1c21ddc0549b74e8ea00470ace7",
+      "v41b_sha256": "34957decba23d1a46e7f8b6dc5b5e6460b6ed1c21ddc0549b74e8ea00470ace7"
+    },
+    {
+      "path": "hall.js",
+      "status": "unchanged",
+      "baseline_sha256": "baf898378a4c3493cf9d1cccd613469168b1e9386d0c682cf24e7043e81c830d",
+      "v41b_sha256": "baf898378a4c3493cf9d1cccd613469168b1e9386d0c682cf24e7043e81c830d"
+    },
+    {
+      "path": "index.html",
+      "status": "modified",
+      "baseline_sha256": "480da2fa74ff952b91f8b237622e6a5f35cd768344265044e927032ee1b1e296",
+      "v41b_sha256": "14b9b50ea1c7b84bb5ae698bf8203955f9cf7fe1526a46866df80cf751d99982"
+    },
+    {
+      "path": "living-hall.css",
+      "status": "unchanged",
+      "baseline_sha256": "2189dd0661d2bf76c961c483f9f8c6ee61491bf8d396f6b7e1d215caabe4f210",
+      "v41b_sha256": "2189dd0661d2bf76c961c483f9f8c6ee61491bf8d396f6b7e1d215caabe4f210"
+    },
+    {
+      "path": "progression.css",
+      "status": "unchanged",
+      "baseline_sha256": "dca2cb269f3c7a7446cbeb01092b3a75699643e8b13397bec91dfba432f75459",
+      "v41b_sha256": "dca2cb269f3c7a7446cbeb01092b3a75699643e8b13397bec91dfba432f75459"
+    },
+    {
+      "path": "progression.js",
+      "status": "modified",
+      "baseline_sha256": "93b87d502d04741215afa0183646b09d30442954359d261be673b10bdaf09640",
+      "v41b_sha256": "054e56f3b1a25681397888be984fd50e89872ab3da3803fb7668521de114a335"
+    },
+    {
+      "path": "recruitment.js",
+      "status": "unchanged",
+      "baseline_sha256": "afd647684093b6b09d32e098afe1ee82a09f37bbea3f1a086b50ab2bff3e616a",
+      "v41b_sha256": "afd647684093b6b09d32e098afe1ee82a09f37bbea3f1a086b50ab2bff3e616a"
+    },
+    {
+      "path": "rules.js",
+      "status": "unchanged",
+      "baseline_sha256": "b9aa26a778c33ec4a5a9f78161b7f6fdc0d645522b4ab69da7620d6f3df9e85b",
+      "v41b_sha256": "b9aa26a778c33ec4a5a9f78161b7f6fdc0d645522b4ab69da7620d6f3df9e85b"
+    },
+    {
+      "path": "save.js",
+      "status": "modified",
+      "baseline_sha256": "07d4e6d67237dd51de022c2daa22a85cc0b3edd91b6d9391aaae77cef24e1b57",
+      "v41b_sha256": "7591a43149b3bbc32116a450a5f70bd495e61c40978712aa3ba13d0467ad5150"
+    },
+    {
+      "path": "skills.js",
+      "status": "unchanged",
+      "baseline_sha256": "d8aa248523ae0161ee552e920346b1cbb1832f2d1063ead24f46f30be8e9df8b",
+      "v41b_sha256": "d8aa248523ae0161ee552e920346b1cbb1832f2d1063ead24f46f30be8e9df8b"
+    },
+    {
+      "path": "styles.css",
+      "status": "unchanged",
+      "baseline_sha256": "e0bca83eadcd3d2917dd23021530615cfb70ae259cd08f9f83962725effdaef4",
+      "v41b_sha256": "e0bca83eadcd3d2917dd23021530615cfb70ae259cd08f9f83962725effdaef4"
+    },
+    {
+      "path": "tests/assets-v3.test.py",
+      "status": "modified",
+      "baseline_sha256": "681127b534fc14ead84db688c8daf847f29363d13d4ebb2b124147c2cddbc961",
+      "v41b_sha256": "e2c34a9437da2495195ed2cc9ae214e976fd83f0473cac5fb9179a3cc6b59b0b"
+    },
+    {
+      "path": "tests/assets-v4.test.py",
+      "status": "modified",
+      "baseline_sha256": "81692d025c42d539f5815e4f4ae24e63bdd3e455fc51ca3d1b4e792d5a35898f",
+      "v41b_sha256": "afe29ca1584b1673fa9770cb8f2dfddbc714e2b2685aa6239a13c7fe0b6304f5"
+    },
+    {
+      "path": "tests/assets-v41.test.py",
+      "status": "unchanged",
+      "baseline_sha256": "39139f6e8e7a6f7e7819b157afd33f24e6e473cf9f38d386fe8411f0ced4ae40",
+      "v41b_sha256": "39139f6e8e7a6f7e7819b157afd33f24e6e473cf9f38d386fe8411f0ced4ae40"
+    },
+    {
+      "path": "tests/assets-v41b.test.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "88527cacc0a88a9f279159abf07e12a6e9bfddb5359d62b116b84d4d9a8b7d3a"
+    },
+    {
+      "path": "tests/combat_v01_rng_vectors.json",
+      "status": "unchanged",
+      "baseline_sha256": "1a52da05580d2e1d3445dfb8be80f7c2702bff7e796dc83013003f2439183630",
+      "v41b_sha256": "1a52da05580d2e1d3445dfb8be80f7c2702bff7e796dc83013003f2439183630"
+    },
+    {
+      "path": "tests/dynamic-v41b.test.cjs",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "1133404102ceed1bbb716f628b209cf81d4e5a8d5972ed61914df966193d34ae"
+    },
+    {
+      "path": "tests/fixtures/PROVENANCE.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "8c1ffe0d709c89e4bac18cc236e90d14e243b2b3d633f5214924c6704a44097e"
+    },
+    {
+      "path": "tests/fixtures/v41a-protected-sha256.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "eb901bec3a8320ec22d02178839b702328f4eaab3c674497a7eac9a9a7b06b7f"
+    },
+    {
+      "path": "tests/fixtures/v41a-save-v1.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "629fe1840a8d333ecb47d271c1ddffa53bc501c4a037fc78aedb8c3ef21d2fef"
+    },
+    {
+      "path": "tests/hall-v3.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "1cde861e7bbd6af171c4460620d72ebaf389a6dbac5fb8fa6bb775abb2afc02b",
+      "v41b_sha256": "1cde861e7bbd6af171c4460620d72ebaf389a6dbac5fb8fa6bb775abb2afc02b"
+    },
+    {
+      "path": "tests/loop-v4.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "c630ab4eb0ca528bbc59846823c8340a32ab40559b048026bb5c7500f08fff17",
+      "v41b_sha256": "c630ab4eb0ca528bbc59846823c8340a32ab40559b048026bb5c7500f08fff17"
+    },
+    {
+      "path": "tests/loop-v41b.test.cjs",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "f9bb085adac9d7862d10c3c486431e6c888733380174f982ca2cbd5e98a73cd0"
+    },
+    {
+      "path": "tests/progression-v4.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "e570f3e792983e3104237eb9c6603701b3170e99a506554acd33325e7c1eab9f",
+      "v41b_sha256": "e570f3e792983e3104237eb9c6603701b3170e99a506554acd33325e7c1eab9f"
+    },
+    {
+      "path": "tests/recruitment-v2.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "4a4c73a8124122ed748730ba0d3f966d626467d83f1418443799cc417915ecfb",
+      "v41b_sha256": "4a4c73a8124122ed748730ba0d3f966d626467d83f1418443799cc417915ecfb"
+    },
+    {
+      "path": "tests/recruitment-v41.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "e0d2f36635b3ebf747d09a96672f14c5d52c1c6b7bee3d79b9aa685a71cca513",
+      "v41b_sha256": "e0d2f36635b3ebf747d09a96672f14c5d52c1c6b7bee3d79b9aa685a71cca513"
+    },
+    {
+      "path": "tests/rules.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "da96bea7494dfede42dd97eb5bf5e16793da7e32607b58e10ddda67808d3efd3",
+      "v41b_sha256": "da96bea7494dfede42dd97eb5bf5e16793da7e32607b58e10ddda67808d3efd3"
+    },
+    {
+      "path": "tests/run-all.py",
+      "status": "modified",
+      "baseline_sha256": "9e7c58c429d9c714b473ae67f5f32b503bcfd52dc8dcebcd8da9b6320cbfd38f",
+      "v41b_sha256": "22ddf7bac8be337c92ebd9216751d6ae03d605811bd98a54e07d3b11ac7392ae"
+    },
+    {
+      "path": "tests/save-v41.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "f2ed24e3c47c259e6994d9c9b2a51cd9b5f76cf677c6c8bcc97452ec32c400e6",
+      "v41b_sha256": "f2ed24e3c47c259e6994d9c9b2a51cd9b5f76cf677c6c8bcc97452ec32c400e6"
+    },
+    {
+      "path": "tests/static-v2.test.py",
+      "status": "modified",
+      "baseline_sha256": "ac3e60c5c48bba7c1c4b0bd7370ea930946b588b1a33ad1a066d8f4f1a890eb0",
+      "v41b_sha256": "b2745ecb6c5d03780d56af0aceb20e3e49c50e3694c6b487deaf33dbdc821416"
+    },
+    {
+      "path": "tests/ui-smoke.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "2b574d1dbd94ffa41b7d37828bbf867c63769e8f5064f430d7748855f71dfb02",
+      "v41b_sha256": "2b574d1dbd94ffa41b7d37828bbf867c63769e8f5064f430d7748855f71dfb02"
+    },
+    {
+      "path": "tests/ui-v2.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "9975ed22909aa9c2c32bb7880fae703a6b2a47cd04e2eadc138ce1818713b360",
+      "v41b_sha256": "9975ed22909aa9c2c32bb7880fae703a6b2a47cd04e2eadc138ce1818713b360"
+    },
+    {
+      "path": "tests/ui-v3.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "38139c2dcb53ada765987f6aef43b08bec0b47f6e62bc1f6fdd4acea495c08ad",
+      "v41b_sha256": "38139c2dcb53ada765987f6aef43b08bec0b47f6e62bc1f6fdd4acea495c08ad"
+    },
+    {
+      "path": "tests/ui-v4.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "2e0e71c2e1281464ffd83e1fadc6133910ead1c1ece9f4f17c3394b92b2c0aa1",
+      "v41b_sha256": "2e0e71c2e1281464ffd83e1fadc6133910ead1c1ece9f4f17c3394b92b2c0aa1"
+    },
+    {
+      "path": "tests/ui-v41.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "7b5ddf21b884ea83ca30696d5d6bd8f76494c3c84e14cab1ecd33a34e2619f3e",
+      "v41b_sha256": "7b5ddf21b884ea83ca30696d5d6bd8f76494c3c84e14cab1ecd33a34e2619f3e"
+    },
+    {
+      "path": "tests/ui-v41b.test.cjs",
+      "status": "added",
+      "baseline_sha256": null,
+      "v41b_sha256": "ce7e192a1acb7901eeace45b0693d4c8dbbd2382b815fad5b21f81a2971400c7"
+    }
+  ]
+}
