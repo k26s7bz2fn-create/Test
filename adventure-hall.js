@@ -10,7 +10,7 @@ class LeaderHall extends H.HallModel{
  for(const a of this.actors.values()){a.exitPoint=D.bound(s,a.id)?'portal':'entrance';if(returns.has(a.id)&&a.mode==='Return'){a.point='portal';a.x=H.points.portal.x;a.y=H.points.portal.y;a.entryPortal=true;a.mode='ExitPortal';a.fade=0;a.wait=.4;}if(a.departing&&a.mode==='Preparing')a.wait=Math.min(a.wait,.35);}
  this.previousRuns=new Map(D.runs(s).map(d=>[d.id,{status:d.status}]));
  }
- update(seconds,reduced=false){if(!Number.isFinite(seconds)||seconds<0)throw Error('Invalid visual delta');const dt=Math.min(seconds,.1);this.visualTime+=dt;this.reduced=reduced;
+ update(seconds,reduced=false){if(!Number.isFinite(seconds)||seconds<0)throw Error('Invalid visual delta');const dt=Math.min(seconds,.1);this.visualTime+=dt;this.delta=dt;this.reduced=reduced;
  for(const [id,a]of this.actors){if(reduced){if(a.departing){a.fade=(a.fade??1)-dt*5;if(a.fade<=0)this.actors.delete(id);continue;}a.mode=a.injured?'Sit':'Idle';a.fade=1;continue;}
  if(a.mode==='ExitPortal'){a.fade=Math.min(1,(a.fade||0)+dt*3);a.wait-=dt;if(a.wait<=0){a.fade=1;a.mode='Return';a.wait=0;}continue;}
  if(a.mode==='EnterPortal'||a.mode==='ExitHall'){a.fade=(a.fade??1)-dt*3;if(a.fade<=0)this.actors.delete(id);continue;}
@@ -22,12 +22,12 @@ class LeaderHall extends H.HallModel{
  if(a.injured){if(a.point!=='seat')this.walk(a,'seat');else{a.mode='Activity';a.wait=8;}continue;}
  if(a.mode==='Activity'){a.mode='Idle';a.wait=1.4;continue;}a.sequence++;const choices=H.activities.filter(p=>p!==a.point);this.walk(a,choices[V.hash(a.id+':activity:'+a.sequence)%choices.length]);
  }}
- snapshot(){return super.snapshot().map(a=>({...a,opacity:a.fade??1,character:this.characters.get(a.id),pose:['Walk','Depart'].includes(a.mode)?'Walk':a.mode==='Gather'||a.mode==='Preparing'?'Prepare':['EnterPortal','ExitPortal'].includes(a.mode)?a.mode:a.injured?'Sit':a.mode==='Activity'?'Interact':'Idle'}));}
+ snapshot(){const actors=super.snapshot();return actors.map(a=>({...a,facing:a.social?((actors.find(b=>b.id!==a.id&&b.point===a.point)?.x??a.x)>a.x?1:-1):a.facing,opacity:a.fade??1,character:this.characters.get(a.id),view:a.mode==='Activity'&&['board','portal','chest'].includes(a.point)?'back':a.view||'three',pose:['Walk','Depart'].includes(a.mode)?'Walk':a.mode==='Gather'||a.mode==='Preparing'?'Prepare':['EnterPortal','ExitPortal'].includes(a.mode)?a.mode:a.injured?'Sit':a.mode==='Activity'?'Interact':'Idle'}));}
 }
 class LeaderHallView{
  constructor(model,onMember){this.model=model;this.scene=new V.Scene(onMember);}
  mount(layer){this.scene.mount(layer);}
- draw(){const snapshot=this.model.snapshot();if(this.scene.layer?.parentElement?.dataset)this.scene.layer.parentElement.dataset.portalActive=String(snapshot.some(a=>['EnterPortal','ExitPortal'].includes(a.pose)));this.scene.draw(snapshot.filter(a=>a.character).map(a=>({...a,label:a.activity,scale:a.scale*.78})));}
+ draw(){const snapshot=this.model.snapshot();if(this.scene.layer?.parentElement?.dataset)this.scene.layer.parentElement.dataset.portalActive=String(snapshot.some(a=>['EnterPortal','ExitPortal'].includes(a.pose)));this.scene.draw(snapshot.filter(a=>a.character).map(a=>({...a,label:a.activity,scale:a.scale*.78})),[],this.model.delta||1/60,this.model.reduced);}
 }
 g.GuildAdventureHall={LeaderHall,LeaderHallView};if(typeof module!=='undefined')module.exports=g.GuildAdventureHall;
 })(typeof globalThis!=='undefined'?globalThis:window);

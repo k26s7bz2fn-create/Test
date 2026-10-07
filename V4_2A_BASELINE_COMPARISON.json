@@ -1,0 +1,1068 @@
+{
+  "schema": "guildgame.baseline-comparison.v42a",
+  "created": "2026-10-06",
+  "baseline": {
+    "file": "GuildGame_BrowserPlaytest_V4_2_LivingAdventure.zip",
+    "sha256": "8e9ef1c3536b0003ab2e2390b00d75285310d5a4766c16288d7d927650d204fa",
+    "untouched": true
+  },
+  "release": {
+    "file": "GuildGame_BrowserPlaytest_V4_2A_VisualAndFlowFix.zip",
+    "entrypoint": "index.html",
+    "cache_query": "v=4.2a",
+    "root_layout": true,
+    "deployed": false
+  },
+  "save": {
+    "from": [
+      "guildgame.browser.save.v1",
+      "guildgame.browser.save.v2",
+      "guildgame.browser.save.v3"
+    ],
+    "to": "guildgame.browser.save.v4",
+    "keys_unchanged": true,
+    "new_fields": [
+      "adventureUI"
+    ],
+    "old_gameplay_fields_preserved": true
+  },
+  "balance": {
+    "old_contract": "browser.quests.v4.1b",
+    "new_contract": "browser.quests.v4.2a",
+    "only_new_offers": true,
+    "minimum_power": [
+      180,
+      470,
+      760,
+      1150
+    ],
+    "tier_multipliers": [
+      0.7,
+      0.95,
+      1.25,
+      1.65
+    ],
+    "reward_steps": {
+      "gold": 6,
+      "xp": 12,
+      "guildXP": 5
+    },
+    "xp_cap": 600,
+    "typical_group_levels_1_to_4_power": [
+      264,
+      339,
+      414,
+      489
+    ]
+  },
+  "verification": {
+    "checks": 781,
+    "syntax_checks": 16,
+    "suites": 28,
+    "failures": 0,
+    "scope": [
+      "model",
+      "DOM stub",
+      "static",
+      "syntax",
+      "ZIP content"
+    ],
+    "real_browser": false,
+    "safari": false,
+    "iphone": false,
+    "fps": null,
+    "unity": false
+  },
+  "protected_byte_identity": {
+    "rules.js": true,
+    "progression.js": true,
+    "recruitment.js": true,
+    "dynamic-quests.js": true,
+    "combat.js": true,
+    "skills.js": true,
+    "hall.js": true,
+    "hall-view.js": true,
+    "dungeon.js": true,
+    "assets/adventure-environments.webp": true,
+    "assets/adventurers-painted.webp": true,
+    "assets/adventurers-unarmed.webp": true,
+    "assets/goblin-boss.svg": true,
+    "assets/goblin-brute.svg": true,
+    "assets/goblin-melee.svg": true,
+    "assets/goblin-ranged.svg": true,
+    "assets/guild-hall.svg": true,
+    "assets/guild-master-painted.webp": true,
+    "assets/hall-painted.webp": true,
+    "assets/mage.svg": true,
+    "assets/priest.svg": true,
+    "assets/rogue.svg": true,
+    "assets/warrior.svg": true
+  },
+  "summary": {
+    "unchanged": 81,
+    "changed": 9,
+    "added": 16,
+    "removed": 0
+  },
+  "exclusions": [
+    "V4_2A_BASELINE_COMPARISON.json (self-reference)",
+    "enclosing ZIP (self-reference)"
+  ],
+  "legacy_test_change": "Only cache expectation changed to v=4.2a in assets-v41b and assets-v42; all suites retained. Asset iterators gain checks for new references. Four additive V4.2A suites added to run-all.",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "status": "unchanged",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "v42a_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "baseline_bytes": 0,
+      "v42a_bytes": 0,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_README.md",
+      "status": "unchanged",
+      "baseline_sha256": "94909111a17834ee84876382e3c8b64fdb54f92919c8f702cfc70bcc5326963f",
+      "v42a_sha256": "94909111a17834ee84876382e3c8b64fdb54f92919c8f702cfc70bcc5326963f",
+      "baseline_bytes": 2742,
+      "v42a_bytes": 2742,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "bdfdcd537a5950f30f7dc291a0241e4fdd184fd60242b9f0319648e0e1fb0dbc",
+      "v42a_sha256": "bdfdcd537a5950f30f7dc291a0241e4fdd184fd60242b9f0319648e0e1fb0dbc",
+      "baseline_bytes": 1429,
+      "v42a_bytes": 1429,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V2_REPORT.md",
+      "status": "unchanged",
+      "baseline_sha256": "40c2fa23af6783a30388ba75492647bc6cce7234bf021b9abbb7b4ccdf70b1e7",
+      "v42a_sha256": "40c2fa23af6783a30388ba75492647bc6cce7234bf021b9abbb7b4ccdf70b1e7",
+      "baseline_bytes": 11925,
+      "v42a_bytes": 11925,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V2_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "26d0c5f7404272a958069613c04570c29f08402ececf4c5d40e91f0fe646a14f",
+      "v42a_sha256": "26d0c5f7404272a958069613c04570c29f08402ececf4c5d40e91f0fe646a14f",
+      "baseline_bytes": 4290,
+      "v42a_bytes": 4290,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V3_LIVING_HALL_REPORT.md",
+      "status": "unchanged",
+      "baseline_sha256": "cf156f6d235e91eaa45727b7a2af74a9ded2a7dfe20ec0e27931a38ccd2ec0c3",
+      "v42a_sha256": "cf156f6d235e91eaa45727b7a2af74a9ded2a7dfe20ec0e27931a38ccd2ec0c3",
+      "baseline_bytes": 16192,
+      "v42a_bytes": 16192,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V3_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "92d7e837861507f3d132a1dbe760dc7743d878da1e02b524f4ffbec4089b25dc",
+      "v42a_sha256": "92d7e837861507f3d132a1dbe760dc7743d878da1e02b524f4ffbec4089b25dc",
+      "baseline_bytes": 8517,
+      "v42a_bytes": 8517,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_1A_REPORT.md",
+      "status": "unchanged",
+      "baseline_sha256": "4924127e83a8138ec2ee43b50677e4f080fb547c9a1f8eb52675d9ce18136305",
+      "v42a_sha256": "4924127e83a8138ec2ee43b50677e4f080fb547c9a1f8eb52675d9ce18136305",
+      "baseline_bytes": 21076,
+      "v42a_bytes": 21076,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_1A_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "723909c017018d72969678b696e98c5e936d5ef368ae753a2a98852f0e60f954",
+      "v42a_sha256": "723909c017018d72969678b696e98c5e936d5ef368ae753a2a98852f0e60f954",
+      "baseline_bytes": 19125,
+      "v42a_bytes": 19125,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_1B_REPORT.md",
+      "status": "unchanged",
+      "baseline_sha256": "4f580bf51e7af9f187bc0d4f894134ab0bd96691fcaa6e58fa1bf840ac95e93b",
+      "v42a_sha256": "4f580bf51e7af9f187bc0d4f894134ab0bd96691fcaa6e58fa1bf840ac95e93b",
+      "baseline_bytes": 17035,
+      "v42a_bytes": 17035,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_1B_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "5d798127400d2f48597048d17a8cc9dd533405c88cceee806f0b65a0424e0573",
+      "v42a_sha256": "5d798127400d2f48597048d17a8cc9dd533405c88cceee806f0b65a0424e0573",
+      "baseline_bytes": 30370,
+      "v42a_bytes": 30370,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_2A_REPORT.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "02b5d060c93191e096a4a8a17a57f89568be7a17b984884e81c1a62c4369c70a",
+      "baseline_bytes": null,
+      "v42a_bytes": 24457,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_2A_TEST_OUTPUT.txt",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "eed55824e9464a54a91da4f290305f01d26db6c502f95d73be41b9eed73d59f3",
+      "baseline_bytes": null,
+      "v42a_bytes": 100654,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_2_REPORT.md",
+      "status": "unchanged",
+      "baseline_sha256": "b2d3a999c0c87ee37246789045aa20c0190228ef4b7cd65094cc9fe20d0c7576",
+      "v42a_sha256": "b2d3a999c0c87ee37246789045aa20c0190228ef4b7cd65094cc9fe20d0c7576",
+      "baseline_bytes": 24332,
+      "v42a_bytes": 24332,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_2_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "872cc07a9be2530599b12e5b915265fd6541e9e3886a2ca18eb6c1bd8d58c1ee",
+      "v42a_sha256": "872cc07a9be2530599b12e5b915265fd6541e9e3886a2ca18eb6c1bd8d58c1ee",
+      "baseline_bytes": 81882,
+      "v42a_bytes": 81882,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_PROGRESSION_REPORT.md",
+      "status": "unchanged",
+      "baseline_sha256": "9fac8fe4909b04ff9b476e5c1891c24376feeda4f33a400a717375c141bc1a28",
+      "v42a_sha256": "9fac8fe4909b04ff9b476e5c1891c24376feeda4f33a400a717375c141bc1a28",
+      "baseline_bytes": 21160,
+      "v42a_bytes": 21160,
+      "protected": false
+    },
+    {
+      "path": "BROWSER_PLAYTEST_V4_TEST_OUTPUT.txt",
+      "status": "unchanged",
+      "baseline_sha256": "35691b55ba826407ae08621fa8d72c1bf95d19e6b67686176d55c06f9678e3da",
+      "v42a_sha256": "35691b55ba826407ae08621fa8d72c1bf95d19e6b67686176d55c06f9678e3da",
+      "baseline_bytes": 14176,
+      "v42a_bytes": 14176,
+      "protected": false
+    },
+    {
+      "path": "V3_BASELINE_COMPARISON.json",
+      "status": "unchanged",
+      "baseline_sha256": "2842b7345e1a20879de8891e73e1a8acfae05e517edaafb6a786e480a9367e43",
+      "v42a_sha256": "2842b7345e1a20879de8891e73e1a8acfae05e517edaafb6a786e480a9367e43",
+      "baseline_bytes": 6214,
+      "v42a_bytes": 6214,
+      "protected": false
+    },
+    {
+      "path": "V3_START_HERE.md",
+      "status": "unchanged",
+      "baseline_sha256": "cacbca77181a5e590e2de8c05c3433c4f6faa06d0c1673752beaf6a3393ebdf9",
+      "v42a_sha256": "cacbca77181a5e590e2de8c05c3433c4f6faa06d0c1673752beaf6a3393ebdf9",
+      "baseline_bytes": 1483,
+      "v42a_bytes": 1483,
+      "protected": false
+    },
+    {
+      "path": "V4_1A_BASELINE_COMPARISON.json",
+      "status": "unchanged",
+      "baseline_sha256": "269a9d100a47a6c87b607de440bba8f08c2847e12992ba02bc9b5a31434b6e35",
+      "v42a_sha256": "269a9d100a47a6c87b607de440bba8f08c2847e12992ba02bc9b5a31434b6e35",
+      "baseline_bytes": 13101,
+      "v42a_bytes": 13101,
+      "protected": false
+    },
+    {
+      "path": "V4_1A_START_HERE.md",
+      "status": "unchanged",
+      "baseline_sha256": "2c00b02a9a3d845c0894d92b9825ca272c537526b3a561b2d6ca0b4228718201",
+      "v42a_sha256": "2c00b02a9a3d845c0894d92b9825ca272c537526b3a561b2d6ca0b4228718201",
+      "baseline_bytes": 2074,
+      "v42a_bytes": 2074,
+      "protected": false
+    },
+    {
+      "path": "V4_1B_BASELINE_COMPARISON.json",
+      "status": "unchanged",
+      "baseline_sha256": "46f9bd9bc8c9b5e1f16a956a9841605c21e8b44514f8785e93f6f0e4af97b3b5",
+      "v42a_sha256": "46f9bd9bc8c9b5e1f16a956a9841605c21e8b44514f8785e93f6f0e4af97b3b5",
+      "baseline_bytes": 18345,
+      "v42a_bytes": 18345,
+      "protected": false
+    },
+    {
+      "path": "V4_1B_START_HERE.md",
+      "status": "unchanged",
+      "baseline_sha256": "cb564c5a8bd70ade3388b4fede0d69ba730fe810f63429fc47978fda2406bea5",
+      "v42a_sha256": "cb564c5a8bd70ade3388b4fede0d69ba730fe810f63429fc47978fda2406bea5",
+      "baseline_bytes": 2272,
+      "v42a_bytes": 2272,
+      "protected": false
+    },
+    {
+      "path": "V4_2A_START_HERE.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "2ec28ad4948a6c5dbd970d0d0de08cd6d3399b72508656f9ede2430f70d8d69c",
+      "baseline_bytes": null,
+      "v42a_bytes": 3163,
+      "protected": false
+    },
+    {
+      "path": "V4_2_BASELINE_COMPARISON.json",
+      "status": "unchanged",
+      "baseline_sha256": "fc21975d6d0a25b10dcf13028df5d38cdf02e6b8a01249d7b880a50451562b12",
+      "v42a_sha256": "fc21975d6d0a25b10dcf13028df5d38cdf02e6b8a01249d7b880a50451562b12",
+      "baseline_bytes": 31600,
+      "v42a_bytes": 31600,
+      "protected": false
+    },
+    {
+      "path": "V4_2_START_HERE.md",
+      "status": "unchanged",
+      "baseline_sha256": "1b09a668891f54e4867c62f4fc059d752a40d616211791f64064133ed640dafa",
+      "v42a_sha256": "1b09a668891f54e4867c62f4fc059d752a40d616211791f64064133ed640dafa",
+      "baseline_bytes": 3688,
+      "v42a_bytes": 3688,
+      "protected": false
+    },
+    {
+      "path": "V4_BASELINE_COMPARISON.json",
+      "status": "unchanged",
+      "baseline_sha256": "cc7417adfa91929f0b50ff9310e1f489d85438c6fb59f0dc99883a3491482aa5",
+      "v42a_sha256": "cc7417adfa91929f0b50ff9310e1f489d85438c6fb59f0dc99883a3491482aa5",
+      "baseline_bytes": 9083,
+      "v42a_bytes": 9083,
+      "protected": false
+    },
+    {
+      "path": "V4_START_HERE.md",
+      "status": "unchanged",
+      "baseline_sha256": "092552be8b5ce3b64544ef5f87813f14edb9e015cd8f7663ede255511bc4fd12",
+      "v42a_sha256": "092552be8b5ce3b64544ef5f87813f14edb9e015cd8f7663ede255511bc4fd12",
+      "baseline_bytes": 1497,
+      "v42a_bytes": 1497,
+      "protected": false
+    },
+    {
+      "path": "adventure-flow.js",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "957c7f902412b2c751cbb7605ff998d3f8bf6279b2bfc793890f2053ab6f2af3",
+      "baseline_bytes": null,
+      "v42a_bytes": 2794,
+      "protected": false
+    },
+    {
+      "path": "adventure-hall.js",
+      "status": "changed",
+      "baseline_sha256": "2de18308f54e5df500f3a28dbde20221655dcd120846fc32a5812c090b4609a8",
+      "v42a_sha256": "d08e6cd3bd565151f3e7490dc8b16780b45ad3bbba7eea0b8a6e1a598f84e465",
+      "baseline_bytes": 4126,
+      "v42a_bytes": 4392,
+      "protected": false
+    },
+    {
+      "path": "adventure.css",
+      "status": "unchanged",
+      "baseline_sha256": "6b5b82d8187e9a5d75b8eeb045346d29310a3e53223542c7cc1bba21f09a0697",
+      "v42a_sha256": "6b5b82d8187e9a5d75b8eeb045346d29310a3e53223542c7cc1bba21f09a0697",
+      "baseline_bytes": 13281,
+      "v42a_bytes": 13281,
+      "protected": false
+    },
+    {
+      "path": "assets/V42A_ASSETS.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "c8ec467e886a44cfd0a25fd05cd123e40c861d671db22c46b80f887c941b7a76",
+      "baseline_bytes": null,
+      "v42a_bytes": 4462,
+      "protected": false
+    },
+    {
+      "path": "assets/adventure-environments.webp",
+      "status": "unchanged",
+      "baseline_sha256": "237f153d5a6835432ee8e915adaaa378aefffff67e7f150a448f3b64e697c741",
+      "v42a_sha256": "237f153d5a6835432ee8e915adaaa378aefffff67e7f150a448f3b64e697c741",
+      "baseline_bytes": 610716,
+      "v42a_bytes": 610716,
+      "protected": true
+    },
+    {
+      "path": "assets/adventure-landscapes-v42a.webp",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "4630631713bef12aa29d04649725d99fd960efe8ff33e8be86df9d0142ffc4ea",
+      "baseline_bytes": null,
+      "v42a_bytes": 648398,
+      "protected": false
+    },
+    {
+      "path": "assets/adventurers-directional.webp",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "dabeadd8724f7fa1423116a39a99b0dc7983cd8f4b80346fc5b5df67e1269dfe",
+      "baseline_bytes": null,
+      "v42a_bytes": 497108,
+      "protected": false
+    },
+    {
+      "path": "assets/adventurers-painted.webp",
+      "status": "unchanged",
+      "baseline_sha256": "a9f2ac93e4f8f59b310baeadc63130531ed3387a5718b840e366bf69b6d127e7",
+      "v42a_sha256": "a9f2ac93e4f8f59b310baeadc63130531ed3387a5718b840e366bf69b6d127e7",
+      "baseline_bytes": 393958,
+      "v42a_bytes": 393958,
+      "protected": true
+    },
+    {
+      "path": "assets/adventurers-unarmed.webp",
+      "status": "unchanged",
+      "baseline_sha256": "7f536adf839be24d2a9780ec183b100a8ec481575d48cbd9164b17f75a304a1d",
+      "v42a_sha256": "7f536adf839be24d2a9780ec183b100a8ec481575d48cbd9164b17f75a304a1d",
+      "baseline_bytes": 448660,
+      "v42a_bytes": 448660,
+      "protected": true
+    },
+    {
+      "path": "assets/goblin-boss.svg",
+      "status": "unchanged",
+      "baseline_sha256": "a1e83ff4448828560882bdac26cdfa5872815b8f377895291992b849495b23e5",
+      "v42a_sha256": "a1e83ff4448828560882bdac26cdfa5872815b8f377895291992b849495b23e5",
+      "baseline_bytes": 1270,
+      "v42a_bytes": 1270,
+      "protected": true
+    },
+    {
+      "path": "assets/goblin-brute.svg",
+      "status": "unchanged",
+      "baseline_sha256": "91c480da631d3ab94e8046c2f8c60c0c54de8fcb97c13fa6d30b981364cc550d",
+      "v42a_sha256": "91c480da631d3ab94e8046c2f8c60c0c54de8fcb97c13fa6d30b981364cc550d",
+      "baseline_bytes": 1151,
+      "v42a_bytes": 1151,
+      "protected": true
+    },
+    {
+      "path": "assets/goblin-melee.svg",
+      "status": "unchanged",
+      "baseline_sha256": "4a513c140577df150ceed4ea5b90b60b69ca7841e14b76f4209a1baba035cf6b",
+      "v42a_sha256": "4a513c140577df150ceed4ea5b90b60b69ca7841e14b76f4209a1baba035cf6b",
+      "baseline_bytes": 1146,
+      "v42a_bytes": 1146,
+      "protected": true
+    },
+    {
+      "path": "assets/goblin-ranged.svg",
+      "status": "unchanged",
+      "baseline_sha256": "82669119463a109fbd757a0342044244b2c58fc76a6b06b180d2e6219fdbf3a8",
+      "v42a_sha256": "82669119463a109fbd757a0342044244b2c58fc76a6b06b180d2e6219fdbf3a8",
+      "baseline_bytes": 1169,
+      "v42a_bytes": 1169,
+      "protected": true
+    },
+    {
+      "path": "assets/guild-hall.svg",
+      "status": "unchanged",
+      "baseline_sha256": "696b508b8bec54f8d416ed8a4e918242b61f504af237b468e8f0895bb5eec018",
+      "v42a_sha256": "696b508b8bec54f8d416ed8a4e918242b61f504af237b468e8f0895bb5eec018",
+      "baseline_bytes": 5680,
+      "v42a_bytes": 5680,
+      "protected": true
+    },
+    {
+      "path": "assets/guild-master-painted.webp",
+      "status": "unchanged",
+      "baseline_sha256": "1aaf598bae121c58bf9c5dbfc9af212a85432bed627f0cb24f70825e215a4747",
+      "v42a_sha256": "1aaf598bae121c58bf9c5dbfc9af212a85432bed627f0cb24f70825e215a4747",
+      "baseline_bytes": 316554,
+      "v42a_bytes": 316554,
+      "protected": true
+    },
+    {
+      "path": "assets/hall-painted.webp",
+      "status": "unchanged",
+      "baseline_sha256": "cf7485297ec78d27c2c3a57891e3c7d1f278b9d8767202121bc8813f6c733405",
+      "v42a_sha256": "cf7485297ec78d27c2c3a57891e3c7d1f278b9d8767202121bc8813f6c733405",
+      "baseline_bytes": 374400,
+      "v42a_bytes": 374400,
+      "protected": true
+    },
+    {
+      "path": "assets/mage.svg",
+      "status": "unchanged",
+      "baseline_sha256": "547ccdbcbe70150a08301d9547bfdaff15825c566c80245156999e86439d87e0",
+      "v42a_sha256": "547ccdbcbe70150a08301d9547bfdaff15825c566c80245156999e86439d87e0",
+      "baseline_bytes": 1974,
+      "v42a_bytes": 1974,
+      "protected": true
+    },
+    {
+      "path": "assets/priest.svg",
+      "status": "unchanged",
+      "baseline_sha256": "f7fb3a737c98a16e6913acbdcda46a0ff1632740ed86a95fb4153796453d7613",
+      "v42a_sha256": "f7fb3a737c98a16e6913acbdcda46a0ff1632740ed86a95fb4153796453d7613",
+      "baseline_bytes": 1966,
+      "v42a_bytes": 1966,
+      "protected": true
+    },
+    {
+      "path": "assets/rogue.svg",
+      "status": "unchanged",
+      "baseline_sha256": "f1c5f8cb455bed34c14ef5c08c0be63a8b7a525b3516b8c34cff0d0bdffd4dee",
+      "v42a_sha256": "f1c5f8cb455bed34c14ef5c08c0be63a8b7a525b3516b8c34cff0d0bdffd4dee",
+      "baseline_bytes": 1791,
+      "v42a_bytes": 1791,
+      "protected": true
+    },
+    {
+      "path": "assets/warrior.svg",
+      "status": "unchanged",
+      "baseline_sha256": "68021882ad694698b2c514d9c02e70e66e580f2181e623a2f6339a51c20334d0",
+      "v42a_sha256": "68021882ad694698b2c514d9c02e70e66e580f2181e623a2f6339a51c20334d0",
+      "baseline_bytes": 1861,
+      "v42a_bytes": 1861,
+      "protected": true
+    },
+    {
+      "path": "character-presentation.js",
+      "status": "changed",
+      "baseline_sha256": "6d0576aef325235dd9d9897a44f36dc58762220bec8c4110c0171896c79efaca",
+      "v42a_sha256": "08ac8e135f2b38e380a6579f82c8b2d5042f8b8d6c082af14f3f4f47999b26f6",
+      "baseline_bytes": 9873,
+      "v42a_bytes": 11843,
+      "protected": false
+    },
+    {
+      "path": "combat.js",
+      "status": "unchanged",
+      "baseline_sha256": "4d4bb72138e7e10d43d7a513051075d1d581f5426f1650ab864b29fdc6ecd9d0",
+      "v42a_sha256": "4d4bb72138e7e10d43d7a513051075d1d581f5426f1650ab864b29fdc6ecd9d0",
+      "baseline_bytes": 8287,
+      "v42a_bytes": 8287,
+      "protected": true
+    },
+    {
+      "path": "dungeon.js",
+      "status": "unchanged",
+      "baseline_sha256": "3bf7469573799151f8f17685ba5b24e77771c1d0a2e5e3bcd32ad82aaf785729",
+      "v42a_sha256": "3bf7469573799151f8f17685ba5b24e77771c1d0a2e5e3bcd32ad82aaf785729",
+      "baseline_bytes": 16420,
+      "v42a_bytes": 16420,
+      "protected": true
+    },
+    {
+      "path": "dynamic-quests.js",
+      "status": "unchanged",
+      "baseline_sha256": "e9098507d9e57934803d6b10966cd5ec3ea3a9e8c4edc54cee9c8e07a4df28c5",
+      "v42a_sha256": "e9098507d9e57934803d6b10966cd5ec3ea3a9e8c4edc54cee9c8e07a4df28c5",
+      "baseline_bytes": 3459,
+      "v42a_bytes": 3459,
+      "protected": true
+    },
+    {
+      "path": "early-balance.js",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "e58ee0f51c57b7aa1b1e2cbf374140974d837f19ce81371031112802619e9416",
+      "baseline_bytes": null,
+      "v42a_bytes": 1481,
+      "protected": false
+    },
+    {
+      "path": "expedition-presentation.js",
+      "status": "changed",
+      "baseline_sha256": "31334933dd83f3267bf2e71ed3615f7c084408b0bd59f9d8aedf451ccfaa2775",
+      "v42a_sha256": "0e9146ad53a226def27438fb61174a7a299fd60d76d1d6008928a7038f1f8bd9",
+      "baseline_bytes": 7556,
+      "v42a_bytes": 7933,
+      "protected": false
+    },
+    {
+      "path": "game.js",
+      "status": "changed",
+      "baseline_sha256": "6e3c1a0a86588a9986cff8b6a14a2fc67068787d2d51fdee92b327d87fbfbba0",
+      "v42a_sha256": "346134bdffe50fb4db12140f3b0a627424becc6ed1a423152dc06a7902e334d1",
+      "baseline_bytes": 65437,
+      "v42a_bytes": 71489,
+      "protected": false
+    },
+    {
+      "path": "hall-view.js",
+      "status": "unchanged",
+      "baseline_sha256": "34957decba23d1a46e7f8b6dc5b5e6460b6ed1c21ddc0549b74e8ea00470ace7",
+      "v42a_sha256": "34957decba23d1a46e7f8b6dc5b5e6460b6ed1c21ddc0549b74e8ea00470ace7",
+      "baseline_bytes": 2733,
+      "v42a_bytes": 2733,
+      "protected": true
+    },
+    {
+      "path": "hall.js",
+      "status": "unchanged",
+      "baseline_sha256": "baf898378a4c3493cf9d1cccd613469168b1e9386d0c682cf24e7043e81c830d",
+      "v42a_sha256": "baf898378a4c3493cf9d1cccd613469168b1e9386d0c682cf24e7043e81c830d",
+      "baseline_bytes": 6050,
+      "v42a_bytes": 6050,
+      "protected": true
+    },
+    {
+      "path": "index.html",
+      "status": "changed",
+      "baseline_sha256": "1b8ef2da2904acb562a6a394f12d2698c080fb3edf7bee7fcc5b903fd33cd360",
+      "v42a_sha256": "0bf3dd6bf76edaafe548524a7902779d5eddd37a14eced240584a8bbe3b6b37e",
+      "baseline_bytes": 2382,
+      "v42a_bytes": 2556,
+      "protected": false
+    },
+    {
+      "path": "living-hall.css",
+      "status": "unchanged",
+      "baseline_sha256": "2189dd0661d2bf76c961c483f9f8c6ee61491bf8d396f6b7e1d215caabe4f210",
+      "v42a_sha256": "2189dd0661d2bf76c961c483f9f8c6ee61491bf8d396f6b7e1d215caabe4f210",
+      "baseline_bytes": 13357,
+      "v42a_bytes": 13357,
+      "protected": false
+    },
+    {
+      "path": "progression.css",
+      "status": "unchanged",
+      "baseline_sha256": "dca2cb269f3c7a7446cbeb01092b3a75699643e8b13397bec91dfba432f75459",
+      "v42a_sha256": "dca2cb269f3c7a7446cbeb01092b3a75699643e8b13397bec91dfba432f75459",
+      "baseline_bytes": 2180,
+      "v42a_bytes": 2180,
+      "protected": false
+    },
+    {
+      "path": "progression.js",
+      "status": "unchanged",
+      "baseline_sha256": "054e56f3b1a25681397888be984fd50e89872ab3da3803fb7668521de114a335",
+      "v42a_sha256": "054e56f3b1a25681397888be984fd50e89872ab3da3803fb7668521de114a335",
+      "baseline_bytes": 7687,
+      "v42a_bytes": 7687,
+      "protected": true
+    },
+    {
+      "path": "recruitment.js",
+      "status": "unchanged",
+      "baseline_sha256": "afd647684093b6b09d32e098afe1ee82a09f37bbea3f1a086b50ab2bff3e616a",
+      "v42a_sha256": "afd647684093b6b09d32e098afe1ee82a09f37bbea3f1a086b50ab2bff3e616a",
+      "baseline_bytes": 1415,
+      "v42a_bytes": 1415,
+      "protected": true
+    },
+    {
+      "path": "rules.js",
+      "status": "unchanged",
+      "baseline_sha256": "b9aa26a778c33ec4a5a9f78161b7f6fdc0d645522b4ab69da7620d6f3df9e85b",
+      "v42a_sha256": "b9aa26a778c33ec4a5a9f78161b7f6fdc0d645522b4ab69da7620d6f3df9e85b",
+      "baseline_bytes": 17407,
+      "v42a_bytes": 17407,
+      "protected": true
+    },
+    {
+      "path": "save.js",
+      "status": "changed",
+      "baseline_sha256": "16f10f5b6688596b2104d6aef62de6cc326f0333343b15feb60d2013bd1f39a1",
+      "v42a_sha256": "95afce62d6bf77d004bf2e61858037e49dbb42a8a9f001024db2334b97672621",
+      "baseline_bytes": 18591,
+      "v42a_bytes": 19328,
+      "protected": false
+    },
+    {
+      "path": "skills.js",
+      "status": "unchanged",
+      "baseline_sha256": "d8aa248523ae0161ee552e920346b1cbb1832f2d1063ead24f46f30be8e9df8b",
+      "v42a_sha256": "d8aa248523ae0161ee552e920346b1cbb1832f2d1063ead24f46f30be8e9df8b",
+      "baseline_bytes": 3177,
+      "v42a_bytes": 3177,
+      "protected": true
+    },
+    {
+      "path": "styles.css",
+      "status": "unchanged",
+      "baseline_sha256": "e0bca83eadcd3d2917dd23021530615cfb70ae259cd08f9f83962725effdaef4",
+      "v42a_sha256": "e0bca83eadcd3d2917dd23021530615cfb70ae259cd08f9f83962725effdaef4",
+      "baseline_bytes": 22871,
+      "v42a_bytes": 22871,
+      "protected": false
+    },
+    {
+      "path": "tests/assets-v3.test.py",
+      "status": "unchanged",
+      "baseline_sha256": "e2c34a9437da2495195ed2cc9ae214e976fd83f0473cac5fb9179a3cc6b59b0b",
+      "v42a_sha256": "e2c34a9437da2495195ed2cc9ae214e976fd83f0473cac5fb9179a3cc6b59b0b",
+      "baseline_bytes": 2970,
+      "v42a_bytes": 2970,
+      "protected": false
+    },
+    {
+      "path": "tests/assets-v4.test.py",
+      "status": "unchanged",
+      "baseline_sha256": "afe29ca1584b1673fa9770cb8f2dfddbc714e2b2685aa6239a13c7fe0b6304f5",
+      "v42a_sha256": "afe29ca1584b1673fa9770cb8f2dfddbc714e2b2685aa6239a13c7fe0b6304f5",
+      "baseline_bytes": 2072,
+      "v42a_bytes": 2072,
+      "protected": false
+    },
+    {
+      "path": "tests/assets-v41.test.py",
+      "status": "unchanged",
+      "baseline_sha256": "39139f6e8e7a6f7e7819b157afd33f24e6e473cf9f38d386fe8411f0ced4ae40",
+      "v42a_sha256": "39139f6e8e7a6f7e7819b157afd33f24e6e473cf9f38d386fe8411f0ced4ae40",
+      "baseline_bytes": 1918,
+      "v42a_bytes": 1918,
+      "protected": false
+    },
+    {
+      "path": "tests/assets-v41b.test.py",
+      "status": "changed",
+      "baseline_sha256": "a1003504f30b51929491b8babce2bb214a1cca9499cf67dbd238dac518646d8f",
+      "v42a_sha256": "d5946818c83394b311f16e9df48fcba2159431a83d7a5f6c74ff8a92e62268af",
+      "baseline_bytes": 1705,
+      "v42a_bytes": 1706,
+      "protected": false
+    },
+    {
+      "path": "tests/assets-v42.test.py",
+      "status": "changed",
+      "baseline_sha256": "4147e911b1f49c45c8a485933fb38ebe3feb19bf4c78a28c11c0ad19e0d7d96d",
+      "v42a_sha256": "b6d0becfdd9e842a114ac7cfa0f91725743891d4dcb95ebdd5e31c4c63530287",
+      "baseline_bytes": 2942,
+      "v42a_bytes": 2943,
+      "protected": false
+    },
+    {
+      "path": "tests/assets-v42a.test.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "11e1a4cd438c4a8eb5f3f6b1031d43778f50b3bb2d343ed0ed66df0ae2835b09",
+      "baseline_bytes": null,
+      "v42a_bytes": 3489,
+      "protected": false
+    },
+    {
+      "path": "tests/balance-flow-v42a.test.cjs",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "06a306160b41af86091e2d0f78fac0bc537ad535abd674de43d46c64140849b4",
+      "baseline_bytes": null,
+      "v42a_bytes": 11911,
+      "protected": false
+    },
+    {
+      "path": "tests/combat_v01_rng_vectors.json",
+      "status": "unchanged",
+      "baseline_sha256": "1a52da05580d2e1d3445dfb8be80f7c2702bff7e796dc83013003f2439183630",
+      "v42a_sha256": "1a52da05580d2e1d3445dfb8be80f7c2702bff7e796dc83013003f2439183630",
+      "baseline_bytes": 1216,
+      "v42a_bytes": 1216,
+      "protected": false
+    },
+    {
+      "path": "tests/dungeon-v42.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "3a7b798f0332c6c82148d7c8bf2208bb0932a1953a0fed70256041e7006943dd",
+      "v42a_sha256": "3a7b798f0332c6c82148d7c8bf2208bb0932a1953a0fed70256041e7006943dd",
+      "baseline_bytes": 14012,
+      "v42a_bytes": 14012,
+      "protected": false
+    },
+    {
+      "path": "tests/dynamic-v41b.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "1133404102ceed1bbb716f628b209cf81d4e5a8d5972ed61914df966193d34ae",
+      "v42a_sha256": "1133404102ceed1bbb716f628b209cf81d4e5a8d5972ed61914df966193d34ae",
+      "baseline_bytes": 14837,
+      "v42a_bytes": 14837,
+      "protected": false
+    },
+    {
+      "path": "tests/fixtures/PROVENANCE.md",
+      "status": "unchanged",
+      "baseline_sha256": "8c1ffe0d709c89e4bac18cc236e90d14e243b2b3d633f5214924c6704a44097e",
+      "v42a_sha256": "8c1ffe0d709c89e4bac18cc236e90d14e243b2b3d633f5214924c6704a44097e",
+      "baseline_bytes": 812,
+      "v42a_bytes": 812,
+      "protected": false
+    },
+    {
+      "path": "tests/fixtures/V42A_PROVENANCE.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "bb48313c961516ae6d81064e6b7560fc8d2c51e72263c34506edd7723fae1adf",
+      "baseline_bytes": null,
+      "v42a_bytes": 703,
+      "protected": false
+    },
+    {
+      "path": "tests/fixtures/V42_PROVENANCE.md",
+      "status": "unchanged",
+      "baseline_sha256": "759c6fb10dab3ee57bf523fcf934cd3947f9441a5b0cbcb8a8c21b092d5ac047",
+      "v42a_sha256": "759c6fb10dab3ee57bf523fcf934cd3947f9441a5b0cbcb8a8c21b092d5ac047",
+      "baseline_bytes": 877,
+      "v42a_bytes": 877,
+      "protected": false
+    },
+    {
+      "path": "tests/fixtures/v41a-protected-sha256.json",
+      "status": "unchanged",
+      "baseline_sha256": "eb901bec3a8320ec22d02178839b702328f4eaab3c674497a7eac9a9a7b06b7f",
+      "v42a_sha256": "eb901bec3a8320ec22d02178839b702328f4eaab3c674497a7eac9a9a7b06b7f",
+      "baseline_bytes": 1749,
+      "v42a_bytes": 1749,
+      "protected": false
+    },
+    {
+      "path": "tests/fixtures/v41a-save-v1.json",
+      "status": "unchanged",
+      "baseline_sha256": "629fe1840a8d333ecb47d271c1ddffa53bc501c4a037fc78aedb8c3ef21d2fef",
+      "v42a_sha256": "629fe1840a8d333ecb47d271c1ddffa53bc501c4a037fc78aedb8c3ef21d2fef",
+      "baseline_bytes": 46018,
+      "v42a_bytes": 46018,
+      "protected": false
+    },
+    {
+      "path": "tests/fixtures/v41b-protected-sha256.json",
+      "status": "unchanged",
+      "baseline_sha256": "336d1c7d67c196bcf8e1ba57510413463ca8843da10cca32137fd05d70b141c7",
+      "v42a_sha256": "336d1c7d67c196bcf8e1ba57510413463ca8843da10cca32137fd05d70b141c7",
+      "baseline_bytes": 1839,
+      "v42a_bytes": 1839,
+      "protected": false
+    },
+    {
+      "path": "tests/fixtures/v41b-save-v2.json",
+      "status": "unchanged",
+      "baseline_sha256": "8082b09dce05efe27b03acf158837401508cff89b88d06f87f2af19d136cafa3",
+      "v42a_sha256": "8082b09dce05efe27b03acf158837401508cff89b88d06f87f2af19d136cafa3",
+      "baseline_bytes": 9469,
+      "v42a_bytes": 9469,
+      "protected": false
+    },
+    {
+      "path": "tests/fixtures/v42-protected-sha256.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "9a4ea9d8cf46e6aeb05ea800651f27cdf101cdea812806fc509a47f990cbd85e",
+      "baseline_bytes": null,
+      "v42a_bytes": 2136,
+      "protected": false
+    },
+    {
+      "path": "tests/fixtures/v42-save-v3.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "a3af6042be742b886dd11a8ab09ed462465768d5934d3b96325a37cc70d29916",
+      "baseline_bytes": null,
+      "v42a_bytes": 9533,
+      "protected": false
+    },
+    {
+      "path": "tests/hall-v3.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "1cde861e7bbd6af171c4460620d72ebaf389a6dbac5fb8fa6bb775abb2afc02b",
+      "v42a_sha256": "1cde861e7bbd6af171c4460620d72ebaf389a6dbac5fb8fa6bb775abb2afc02b",
+      "baseline_bytes": 8144,
+      "v42a_bytes": 8144,
+      "protected": false
+    },
+    {
+      "path": "tests/loop-v4.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "c630ab4eb0ca528bbc59846823c8340a32ab40559b048026bb5c7500f08fff17",
+      "v42a_sha256": "c630ab4eb0ca528bbc59846823c8340a32ab40559b048026bb5c7500f08fff17",
+      "baseline_bytes": 4589,
+      "v42a_bytes": 4589,
+      "protected": false
+    },
+    {
+      "path": "tests/loop-v41b.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "f9bb085adac9d7862d10c3c486431e6c888733380174f982ca2cbd5e98a73cd0",
+      "v42a_sha256": "f9bb085adac9d7862d10c3c486431e6c888733380174f982ca2cbd5e98a73cd0",
+      "baseline_bytes": 5928,
+      "v42a_bytes": 5928,
+      "protected": false
+    },
+    {
+      "path": "tests/presentation-v42.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "2a77e1459b1fead6c575ea3e2e807a407fd30c1cc584a97b76f269fc14c10d20",
+      "v42a_sha256": "2a77e1459b1fead6c575ea3e2e807a407fd30c1cc584a97b76f269fc14c10d20",
+      "baseline_bytes": 10673,
+      "v42a_bytes": 10673,
+      "protected": false
+    },
+    {
+      "path": "tests/presentation-v42a.test.cjs",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "5b49b76a7165e6fe91500b478fa06ef26711a13faa8c6bcd5f3e75e365dd12d3",
+      "baseline_bytes": null,
+      "v42a_bytes": 6588,
+      "protected": false
+    },
+    {
+      "path": "tests/progression-v4.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "e570f3e792983e3104237eb9c6603701b3170e99a506554acd33325e7c1eab9f",
+      "v42a_sha256": "e570f3e792983e3104237eb9c6603701b3170e99a506554acd33325e7c1eab9f",
+      "baseline_bytes": 15317,
+      "v42a_bytes": 15317,
+      "protected": false
+    },
+    {
+      "path": "tests/recruitment-v2.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "4a4c73a8124122ed748730ba0d3f966d626467d83f1418443799cc417915ecfb",
+      "v42a_sha256": "4a4c73a8124122ed748730ba0d3f966d626467d83f1418443799cc417915ecfb",
+      "baseline_bytes": 6762,
+      "v42a_bytes": 6762,
+      "protected": false
+    },
+    {
+      "path": "tests/recruitment-v41.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "e0d2f36635b3ebf747d09a96672f14c5d52c1c6b7bee3d79b9aa685a71cca513",
+      "v42a_sha256": "e0d2f36635b3ebf747d09a96672f14c5d52c1c6b7bee3d79b9aa685a71cca513",
+      "baseline_bytes": 3535,
+      "v42a_bytes": 3535,
+      "protected": false
+    },
+    {
+      "path": "tests/rules.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "da96bea7494dfede42dd97eb5bf5e16793da7e32607b58e10ddda67808d3efd3",
+      "v42a_sha256": "da96bea7494dfede42dd97eb5bf5e16793da7e32607b58e10ddda67808d3efd3",
+      "baseline_bytes": 8236,
+      "v42a_bytes": 8236,
+      "protected": false
+    },
+    {
+      "path": "tests/run-all.py",
+      "status": "changed",
+      "baseline_sha256": "42b910499b4da67bae9eebaf8bedbf8c4bae5cc6c1cbf33a952260a729d701dc",
+      "v42a_sha256": "02bd5b191264fa01a7d717449b7f781249293f795638049a90a31309bb5c2512",
+      "baseline_bytes": 1536,
+      "v42a_bytes": 1717,
+      "protected": false
+    },
+    {
+      "path": "tests/save-v41.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "f2ed24e3c47c259e6994d9c9b2a51cd9b5f76cf677c6c8bcc97452ec32c400e6",
+      "v42a_sha256": "f2ed24e3c47c259e6994d9c9b2a51cd9b5f76cf677c6c8bcc97452ec32c400e6",
+      "baseline_bytes": 10812,
+      "v42a_bytes": 10812,
+      "protected": false
+    },
+    {
+      "path": "tests/static-v2.test.py",
+      "status": "unchanged",
+      "baseline_sha256": "b2745ecb6c5d03780d56af0aceb20e3e49c50e3694c6b487deaf33dbdc821416",
+      "v42a_sha256": "b2745ecb6c5d03780d56af0aceb20e3e49c50e3694c6b487deaf33dbdc821416",
+      "baseline_bytes": 2774,
+      "v42a_bytes": 2774,
+      "protected": false
+    },
+    {
+      "path": "tests/ui-smoke.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "2b574d1dbd94ffa41b7d37828bbf867c63769e8f5064f430d7748855f71dfb02",
+      "v42a_sha256": "2b574d1dbd94ffa41b7d37828bbf867c63769e8f5064f430d7748855f71dfb02",
+      "baseline_bytes": 3514,
+      "v42a_bytes": 3514,
+      "protected": false
+    },
+    {
+      "path": "tests/ui-v2.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "9975ed22909aa9c2c32bb7880fae703a6b2a47cd04e2eadc138ce1818713b360",
+      "v42a_sha256": "9975ed22909aa9c2c32bb7880fae703a6b2a47cd04e2eadc138ce1818713b360",
+      "baseline_bytes": 6637,
+      "v42a_bytes": 6637,
+      "protected": false
+    },
+    {
+      "path": "tests/ui-v3.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "38139c2dcb53ada765987f6aef43b08bec0b47f6e62bc1f6fdd4acea495c08ad",
+      "v42a_sha256": "38139c2dcb53ada765987f6aef43b08bec0b47f6e62bc1f6fdd4acea495c08ad",
+      "baseline_bytes": 5880,
+      "v42a_bytes": 5880,
+      "protected": false
+    },
+    {
+      "path": "tests/ui-v4.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "2e0e71c2e1281464ffd83e1fadc6133910ead1c1ece9f4f17c3394b92b2c0aa1",
+      "v42a_sha256": "2e0e71c2e1281464ffd83e1fadc6133910ead1c1ece9f4f17c3394b92b2c0aa1",
+      "baseline_bytes": 7831,
+      "v42a_bytes": 7831,
+      "protected": false
+    },
+    {
+      "path": "tests/ui-v41.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "7b5ddf21b884ea83ca30696d5d6bd8f76494c3c84e14cab1ecd33a34e2619f3e",
+      "v42a_sha256": "7b5ddf21b884ea83ca30696d5d6bd8f76494c3c84e14cab1ecd33a34e2619f3e",
+      "baseline_bytes": 8991,
+      "v42a_bytes": 8991,
+      "protected": false
+    },
+    {
+      "path": "tests/ui-v41b.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "ce7e192a1acb7901eeace45b0693d4c8dbbd2382b815fad5b21f81a2971400c7",
+      "v42a_sha256": "ce7e192a1acb7901eeace45b0693d4c8dbbd2382b815fad5b21f81a2971400c7",
+      "baseline_bytes": 10908,
+      "v42a_bytes": 10908,
+      "protected": false
+    },
+    {
+      "path": "tests/ui-v42.test.cjs",
+      "status": "unchanged",
+      "baseline_sha256": "eba365e412a95bfa01cea830371115edeef5d5320f6f9064e954df541d1a5808",
+      "v42a_sha256": "eba365e412a95bfa01cea830371115edeef5d5320f6f9064e954df541d1a5808",
+      "baseline_bytes": 14580,
+      "v42a_bytes": 14580,
+      "protected": false
+    },
+    {
+      "path": "tests/ui-v42a.test.cjs",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "f205fc9ab5c3be44f1e3fd163886111fa7570d42ef16e5eb29074ae46f637d54",
+      "baseline_bytes": null,
+      "v42a_bytes": 15225,
+      "protected": false
+    },
+    {
+      "path": "visual-quality.css",
+      "status": "added",
+      "baseline_sha256": null,
+      "v42a_sha256": "37b326b2cd651da59adf77c8ed6a21d1d46069cfd3123e54f261c160e4bd77c9",
+      "baseline_bytes": null,
+      "v42a_bytes": 10129,
+      "protected": false
+    }
+  ]
+}
