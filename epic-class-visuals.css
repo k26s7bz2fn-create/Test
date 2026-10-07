@@ -1,0 +1,34 @@
+/* V4.2B: full rendered bodies, native 400:640 cells, grounded scale. No segmented limbs. */
+.quality-figure[data-epic=true]{width:calc(var(--figure-height,135px)*.625)!important}
+.epic-facing{position:absolute;inset:0;transform-origin:50% 95.625%}
+.quality-figure .epic-facing{filter:hue-rotate(var(--identity-hue,0deg)) saturate(.98);transform:scaleX(calc(var(--face,1)*var(--turn-squeeze,1)))}
+.epic-rig{position:absolute;inset:0;transform-origin:50% 95.625%;animation:epic-breath 5s ease-in-out infinite;animation-delay:var(--idle-delay,0s);transition:rotate .2s ease-out}
+.epic-sprite{position:absolute;inset:0;display:block;background-size:300% 100%;background-position:var(--epic-x) 0;background-repeat:no-repeat}
+.epic-rig .direction-view{inset:0;transition:opacity .2s ease;pointer-events:none}
+.quality-figure .epic-shadow{bottom:2.8%;left:18%;right:18%;height:5.5%;background:radial-gradient(ellipse,#141811b8,transparent 73%);filter:blur(.6px);transform:scaleY(.58)}
+.quality-figure[data-epic=true][data-pose=Walk] .epic-rig,.quality-figure[data-epic=true][data-pose=Return] .epic-rig{animation:none;transform:translate3d(0,calc(var(--body-bob,0px)*.2),0)}
+.quality-figure[data-epic=true][data-pose=Windup] .epic-rig{animation:none;rotate:-4deg}
+.quality-figure[data-epic=true][data-pose=Attack] .epic-rig{animation:none;rotate:3deg}
+.quality-figure[data-epic=true][data-pose=Down] .epic-rig{animation:none}
+.quality-figure[data-epic=true][data-pose=Sit] .epic-rig{animation:none;rotate:-5deg;filter:saturate(.68);transform:translateY(4%)}
+.quality-figure[data-epic=true][data-pose=Heal] .figure-art{filter:drop-shadow(0 0 4px #f4d89780)}
+.quality-figure[data-epic=true][data-pose=Cast] .figure-art{filter:drop-shadow(0 0 4px #8d96da75)}
+.quality-figure[data-epic=true] .figure-caption{margin-top:0}
+.portrait.epic-portrait{isolation:isolate}
+.epic-portrait .figure-art{inset:auto;left:50%;bottom:0;height:100%;width:auto;aspect-ratio:400 / 640;transform:translateX(-50%)}
+.epic-portrait .epic-rig{animation:none}
+.epic-portrait .direction-1,.epic-portrait .direction-2{display:none}
+.epic-portrait .epic-facing{transform:none;filter:hue-rotate(var(--identity-hue,0deg))}
+.epic-portrait.portrait-dead .figure-art{filter:grayscale(1);opacity:.48}
+.epic-portrait.portrait-injured .figure-art{filter:saturate(.55)}
+.epic-portrait .portrait-status{z-index:3}
+.epic-mini{flex:0 0 66px;width:66px;height:108px}
+.epic-mini .portrait{width:66px;height:108px;margin:0;background:radial-gradient(ellipse at 50% 60%,#97826215,transparent 70%)}
+.epic-member-line{display:flex;align-items:center;gap:12px;min-width:0}
+.epic-member-line>div:last-child{min-width:0}
+.equipment-epic{display:flex;gap:16px;align-items:center}
+.equipment-epic .portrait{width:118px;height:188px;flex:0 0 118px}
+.epic-asset-note{font-size:11px;color:#c7c5b5;line-height:1.4}
+@keyframes epic-breath{0%,100%{transform:scaleY(1) rotate(-.12deg)}50%{transform:scaleY(1.004) rotate(.12deg)}}
+@media(orientation:landscape) and (max-height:550px){.equipment-epic .portrait{width:94px;height:150px;flex-basis:94px}.epic-mini{flex-basis:58px;width:58px;height:94px}.epic-mini .portrait{width:58px;height:94px}.quality-figure[data-epic=true] .figure-caption b{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.epic-rig,.epic-facing,.epic-rig .direction-view{animation:none!important;transition:none!important}.quality-figure .epic-facing{transform:scaleX(var(--face,1))}.quality-figure[data-epic=true] .epic-rig{transform:none}}
