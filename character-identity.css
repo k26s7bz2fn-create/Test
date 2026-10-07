@@ -1,0 +1,52 @@
+/* V4.3: local SVG layers over the existing directional rigs. Presentation only. */
+.v43-character.visual-body{--atlas-head-bright:1;filter:none}
+.v43-character .rig-head{filter:brightness(var(--atlas-head-bright)) saturate(.85)}
+.v43-character .identity-layer,.v43-character .equipment-layer{position:absolute;inset:0;width:auto;height:auto;border:0;border-radius:0;background:none;box-shadow:none;clip-path:none;pointer-events:none}
+.v43-character svg{display:block;width:100%;height:100%;overflow:visible}
+.v43-character .legs-layer{z-index:2;transform-origin:50% 68%}
+.v43-character .upper-layer{z-index:3}
+.v43-character .identity-layer{z-index:4}
+.v43-character .weapon-layer{z-index:5;left:76%;top:10%;width:28%;height:90%;transform-origin:25% 49%;filter:drop-shadow(1px 1px 1px #121b2580)}
+.v43-character .weapon-staff-layer{top:9%;height:91%;left:77%}
+.v43-character .weapon-mace-layer,.v43-character .weapon-dagger-layer{top:25%;height:78%}
+.v43-character .weapon-empty-layer{display:none}
+.v43-character .equipment-layer.rarity--1{display:none}
+.v43-character .weapon-layer i{display:none}
+.v43-character .v43-rank{position:absolute;z-index:6;left:28%;top:42%;font-size:5px;letter-spacing:-1px;color:#f1dca0;text-shadow:0 1px 1px #342e24}
+.direction-1 .v43-character .weapon-layer{left:64%}.direction-2 .v43-character .weapon-layer{left:78%;z-index:1}
+.quality-figure .v43-character .legs-layer{transform:rotate(calc(var(--step-left)*.22));transition:transform .12s linear}
+.quality-figure .v43-character .upper-layer{transform:none}
+.quality-figure .v43-character .weapon-layer{transform:rotate(calc(var(--step-left)*.6));transform-origin:25% 49%}
+.quality-figure[data-pose=Attack] .v43-character .weapon-layer{rotate:34deg}
+.quality-figure[data-pose=Windup] .v43-character .weapon-layer{rotate:-24deg}
+.quality-figure[data-pose=Sit] .v43-character{filter:saturate(.65)}
+.hall-residents .quality-figure .figure-caption small{display:block;font-size:9px;white-space:normal;line-height:1.2;color:#e0d7b9}
+.hall-residents .quality-figure .figure-caption{width:142px;background:#142126d9;border:1px solid #b5a17075;border-radius:5px;padding:3px 5px;opacity:1}
+.hall-residents .quality-figure .figure-caption b{font-size:11px;color:#f2d896}
+.portrait.shared-portrait{isolation:isolate;--face:1;--step-left:0deg;--step-right:0deg;--body-bob:0px;--turn-squeeze:1}
+.shared-portrait.portrait-dead .figure-art{filter:grayscale(1);opacity:.48}
+.shared-portrait.portrait-injured .figure-art{filter:saturate(.55)}
+.shared-portrait .portrait-status{z-index:10}
+.member-visual-line{display:flex;align-items:center;gap:12px;min-width:0}
+.member-visual-line>div:last-child{min-width:0;flex:1}
+.compact-character{flex:0 0 62px;width:62px;height:112px;overflow:visible}
+.compact-character .portrait{height:112px;width:62px;margin:0;border:0;border-radius:5px;background:radial-gradient(ellipse at 50% 70%,#70858630,transparent 70%)}
+.compact-character .quality-portrait .figure-art{inset:0 20%}
+.compact-character .portrait-status{font-size:8px;bottom:1px}
+.equipment-character{display:flex;align-items:center;gap:16px;padding:10px 0}
+.equipment-character .portrait{width:116px;height:205px;flex:0 0 116px;border-radius:8px;background:radial-gradient(ellipse,#66766f35,transparent 70%)}
+.equipment-character .quality-portrait .figure-art{inset:0 11%}
+.equip-preview{display:flex;justify-content:center;gap:26px;margin:8px 0}
+.equip-preview figure{margin:0;max-width:45%;text-align:center}.equip-preview figcaption{font-size:12px;color:#d6c59d}
+.equip-preview .portrait{width:114px;height:206px;background:radial-gradient(ellipse,#67848830,transparent 70%)}
+.equip-preview .quality-portrait .figure-art{inset:0 10%}
+.equipment-updates{position:relative;padding:8px 12px;margin:0 0 12px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#203a35;border:1px solid #9db18d66;border-radius:8px}
+.equipment-updates strong{font-size:13px;color:#eddfb5}.equipment-updates small{display:block;font-size:11px;color:#cccbb6}
+.equipment-updates button{min-height:44px;padding:6px 12px}
+.equipment-change{border-bottom:1px solid #859b8050;padding:12px 0}.equipment-change h3{margin:0 0 8px}.equipment-change p{font-size:13px}
+@media(orientation:landscape) and (max-height:550px){.hall-residents .quality-figure .figure-caption{width:118px;padding:2px 3px}.hall-residents .quality-figure .figure-caption small{font-size:8px}.hall-residents .quality-figure .figure-caption b{font-size:10px}.equip-preview .portrait{height:160px;width:88px}.equipment-updates{padding:5px 9px}.equipment-character .portrait{width:88px;height:166px;flex-basis:88px}}
+@media(prefers-reduced-motion:reduce){.v43-character *,.shared-portrait *{animation:none!important;transition:none!important}.quality-figure .v43-character .legs-layer{transform:none}}
+
+.shared-portrait .visual-body{animation:none!important}
+
+.rarity-uncommon .slot-icon{border-color:#8cc199;color:#b4e2bc}.rarity-rare .slot-icon{border-color:#8bd3f1;color:#b4e8ff;box-shadow:inset 0 0 8px #73bada30}
