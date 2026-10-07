@@ -1,1 +1,444 @@
 
+{
+  "version": "guildgame.epic-art.v4.2b",
+  "generator": "built-in image_gen; four original atlas generations",
+  "reference": {
+    "user_attachment": "image(1).png",
+    "sha256": "a6d2b786e502270b7040570e7ba376c6ed46e74da46e9ae966192f72c062f122",
+    "target_heads": 6.75,
+    "role": "Direct approved warrior proportions/materials/style reference"
+  },
+  "layout": {
+    "columns": 3,
+    "rows": 1,
+    "order": [
+      "three",
+      "side",
+      "back"
+    ],
+    "alpha": true,
+    "aspect_ratio": 0.625,
+    "baseline_fraction": 0.95625
+  },
+  "variant_contract": {
+    "status": "prepared, base loadouts only",
+    "slots": [
+      "Weapon",
+      "UpperBody",
+      "Legs"
+    ],
+    "technique": "future coherent full-body pre-rendered loadout atlases, same three views, same cell dimensions and foot anchor; no polygon overlays",
+    "runtime_default": "base outfit, no new items or stats",
+    "animation_anchors": {
+      "feet": [
+        0.5,
+        0.95625
+      ],
+      "hips": [
+        0.5,
+        0.56
+      ],
+      "chest": [
+        0.5,
+        0.36
+      ],
+      "head": [
+        0.5,
+        0.15
+      ]
+    },
+    "pose_sets": [
+      "base_three",
+      "base_side",
+      "base_back"
+    ],
+    "walk_cycle": "not produced in this pass",
+    "skeleton": "not produced"
+  },
+  "classes": [
+    {
+      "class": "class.warrior",
+      "file": "assets/epic/warrior.webp",
+      "width": 1200,
+      "height": 640,
+      "cell_width": 400,
+      "cell_height": 640,
+      "frames": [
+        {
+          "view": "three",
+          "source_cell": [
+            0,
+            0,
+            657,
+            887
+          ],
+          "alpha_bounds": [
+            92,
+            38,
+            586,
+            863
+          ],
+          "export_bounds": [
+            35,
+            61,
+            365,
+            612
+          ],
+          "head_y_source": 40,
+          "scale": 0.6682867557715675,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        },
+        {
+          "view": "side",
+          "source_cell": [
+            657,
+            0,
+            1121,
+            887
+          ],
+          "alpha_bounds": [
+            71,
+            39,
+            360,
+            862
+          ],
+          "export_bounds": [
+            103,
+            61,
+            296,
+            612
+          ],
+          "head_y_source": 40,
+          "scale": 0.6690997566909975,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        },
+        {
+          "view": "back",
+          "source_cell": [
+            1121,
+            0,
+            1774,
+            887
+          ],
+          "alpha_bounds": [
+            104,
+            44,
+            549,
+            856
+          ],
+          "export_bounds": [
+            49,
+            61,
+            351,
+            612
+          ],
+          "head_y_source": 46,
+          "scale": 0.6790123456790124,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        }
+      ],
+      "source": "exec-8fddf3d1-30c4-4239-99c3-63aa701e255a.png",
+      "source_sha256": "2212e192574efb5bb4be1274c2f2815e1729a6322bec29ea532ed8675cf6c194",
+      "sha256": "1db063dd5ac8a94eac6b6fa2e0a0dda66e0809c67d246670971f46949ec3b469",
+      "bytes": 152166,
+      "prompt": "Use case: stylized-concept. Asset type: production transparent character turnaround sprite atlas for GuildGame, a static fantasy browser game. Input image 1 is the DIRECT approved warrior design and style reference, not a layout to reproduce. Create ONE atlas with exactly THREE full-body depictions of the SAME warrior, in one horizontal row of three equal-size cells on a landscape canvas. Left cell: front-right three-quarter view, looking toward screen right. Middle cell: true right-side view looking right. Right cell: rear-right three-quarter view, looking right. All three views have identical scale, outfit, face, weapon and lighting, entire sword and boots visible, same ground baseline, generous transparent gaps. No labels, no typography, no logos, no ground, no backdrop, genuine alpha transparency. Match the reference's premium stylized 3D sculpted painted fantasy rendering: about 6.75 heads tall, adult anatomy, powerful but plausible shoulders and legs, substantial hands, not chibi, not thin tall fashion proportions, not flattened cutout illustration. Reproduce this original warrior: mature brown-haired bearded man, heavy dark brushed steel plate with thick warm bronze edge bevels, deep crimson neck scarf, long crimson split tabard and short heavy red back cape, brown leather harness and belt, angular steel boots, original small geometric sun insignia. Robust grounded standing pose, subtle weight balance, arms slightly away from torso. A broad steel longsword with bronze hilt held naturally in right hand, blade angled downward close beside leg and fully visible; NO shield. Crystal-clear material volume, ambient occlusion at joints, warm soft key light from upper left, soft cool fill and restrained rim light. Same anatomical quality and epic presence as the approved reference. Design readable at 130–200 pixels tall in-game. No oversized pauldrons, no blocky polygons, no flat outlines, no watercolor, no paper doll segments, no glossy plastic, no borrowed game logos. This is one character's three-angle atlas, not three different characters. Keep all visible alpha bounds at least 4 percent from outer canvas edges; top heads near 6 percent height and soles near 94 percent height."
+    },
+    {
+      "class": "class.rogue",
+      "file": "assets/epic/rogue.webp",
+      "width": 1200,
+      "height": 640,
+      "cell_width": 400,
+      "cell_height": 640,
+      "frames": [
+        {
+          "view": "three",
+          "source_cell": [
+            0,
+            0,
+            695,
+            887
+          ],
+          "alpha_bounds": [
+            65,
+            13,
+            647,
+            877
+          ],
+          "export_bounds": [
+            15,
+            64,
+            384,
+            612
+          ],
+          "head_y_source": 10,
+          "scale": 0.6343713956170703,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        },
+        {
+          "view": "side",
+          "source_cell": [
+            695,
+            0,
+            1148,
+            887
+          ],
+          "alpha_bounds": [
+            48,
+            11,
+            373,
+            876
+          ],
+          "export_bounds": [
+            97,
+            63,
+            303,
+            612
+          ],
+          "head_y_source": 10,
+          "scale": 0.6351039260969977,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        },
+        {
+          "view": "back",
+          "source_cell": [
+            1148,
+            0,
+            1774,
+            887
+          ],
+          "alpha_bounds": [
+            80,
+            11,
+            569,
+            872
+          ],
+          "export_bounds": [
+            43,
+            61,
+            356,
+            612
+          ],
+          "head_y_source": 12,
+          "scale": 0.6395348837209303,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        }
+      ],
+      "source": "exec-c8d6dc75-d279-439b-a486-7c536090e1d2.png",
+      "source_sha256": "5301ad3132fe45f7b624fe48f252ff654f413b23bf9e11d946c37dce0c3b357a",
+      "sha256": "521a00421f905604942c6114f55f26485ce649f236b129a8605b61d04f4219b0",
+      "bytes": 146186,
+      "prompt": "Use case: stylized-concept. Asset type: one production transparent character turnaround atlas for GuildGame. Image 1 is the approved warrior style/proportion reference. Image 2 is the newly produced warrior atlas: match its EXACT sculpted 3D-painted rendering quality, camera elevation, anatomy scale, soft warm key light from upper left, cool fill, material density and clean silhouette. Do not copy text or layout from image 1. Make exactly THREE full-body views of the SAME new hero in one horizontal row, three equal-size cells, landscape canvas: left front-right three-quarter looking right; middle true right profile looking right; right rear-right three-quarter looking right. Same outfit, face and weapons in all three. About 6.75 to 7 heads tall, adult heroic proportions, believable joints and substantial hands/boots, not chibi and not elongated fashion anatomy. Full head to boots and all weapon tips visible, same soles baseline, equal scale, 4 percent outer alpha margins. Genuine transparent background, no floor, no scenery, no labels, no logos, no text, no watermark. High quality game-ready original fantasy hero with sculpted volume, cloth thickness, bevelled metal, leather seams, ambient occlusion and restrained highlights. Readable at 130–200 pixels tall. Whole cohesive figures, not segmented paper dolls, no flat polygon overlays, no thick black outlines, no cartoon/anime, no plastic gloss. Subject: a confident athletic adult female ROGUE, slightly narrower shoulders and more agile silhouette than the warrior, mature face, dark auburn hair visible under a fitted midnight teal hood pushed back from the brow. Rich charcoal and deep teal layered LEATHER armor, fitted padded leather chest, dark brown belts, warm muted bronze buckles, flexible bracers, fitted trousers, sturdy mid-calf leather boots, short split shoulder cloak, small practical belt pouches. Light forward readiness with one knee slightly bent, grounded balanced feet; arms clearly separate from torso. Two visible steel daggers held downward close to either hip, curved bronze guards, leather grips. Elegant, dangerous, mobile; not sexualized, no exposed midriff or heels. NOT a plate tank. Slight steel glints, no magical glow. A distinct original guild hero matching the warrior's craftsmanship."
+    },
+    {
+      "class": "class.mage",
+      "file": "assets/epic/mage.webp",
+      "width": 1200,
+      "height": 640,
+      "cell_width": 400,
+      "cell_height": 640,
+      "frames": [
+        {
+          "view": "three",
+          "source_cell": [
+            0,
+            0,
+            663,
+            887
+          ],
+          "alpha_bounds": [
+            96,
+            14,
+            641,
+            860
+          ],
+          "export_bounds": [
+            15,
+            38,
+            385,
+            612
+          ],
+          "head_y_source": 49,
+          "scale": 0.6781750924784217,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        },
+        {
+          "view": "side",
+          "source_cell": [
+            663,
+            0,
+            1171,
+            887
+          ],
+          "alpha_bounds": [
+            22,
+            12,
+            463,
+            859
+          ],
+          "export_bounds": [
+            50,
+            38,
+            349,
+            612
+          ],
+          "head_y_source": 48,
+          "scale": 0.6781750924784217,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        },
+        {
+          "view": "back",
+          "source_cell": [
+            1171,
+            0,
+            1774,
+            887
+          ],
+          "alpha_bounds": [
+            46,
+            51,
+            553,
+            857
+          ],
+          "export_bounds": [
+            27,
+            64,
+            372,
+            612
+          ],
+          "head_y_source": 48,
+          "scale": 0.6798516687268232,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        }
+      ],
+      "source": "exec-2920a0a5-ef7c-4cfb-a904-960f3d14d189.png",
+      "source_sha256": "87f5bc7e45c059946a0ea2b952609d2912bd927d74046b3310a3a4b9f435545e",
+      "sha256": "b191ad1f43acb190c2e20563745d1439b58b25ff856d1b206b930f1a6a1fbfdd",
+      "bytes": 199152,
+      "prompt": "Use case: stylized-concept. Asset type: one production transparent character turnaround atlas for GuildGame. Image 1 is the approved warrior style/proportion reference. Image 2 is the newly produced warrior atlas: match its EXACT sculpted 3D-painted rendering quality, camera elevation, anatomy scale, soft warm key light from upper left, cool fill, material density and clean silhouette. Do not copy text or layout from image 1. Make exactly THREE full-body views of the SAME new hero in one horizontal row, three equal-size cells, landscape canvas: left front-right three-quarter looking right; middle true right profile looking right; right rear-right three-quarter looking right. Same outfit, face and weapons in all three. About 6.75 to 7 heads tall, adult heroic proportions, believable joints and substantial hands/boots, not chibi and not elongated fashion anatomy. Full head to boots and all weapon tips visible, same soles baseline, equal scale, 4 percent outer alpha margins. Genuine transparent background, no floor, no scenery, no labels, no logos, no text, no watermark. High quality game-ready original fantasy hero with sculpted volume, cloth thickness, bevelled metal, leather seams, ambient occlusion and restrained highlights. Readable at 130–200 pixels tall. Whole cohesive figures, not segmented paper dolls, no flat polygon overlays, no thick black outlines, no cartoon/anime, no plastic gloss. Subject: an adult male ARCANE MAGE, lean but credible adult frame and defined shoulders, thoughtful strong face, swept-back dark hair with silver at the temples and short neat beard. Layered deep indigo and violet robes, charcoal under-tunic and split lower robe showing substantial leather boots, bronze fasteners and restrained angular arcane embroidery, tall sculpted cloth collar, asymmetrical short mantle, leather spellbook pouch at belt. Calm controlled standing stance with a subtle ready lean. One tall dark wooden and bronze staff held vertically beside the body in the right hand, a faceted violet-blue arcane crystal at its head, staff fully visible with narrow breathing room above it. Other hand relaxed slightly open with a small contained cyan-violet glimmer, not a cloud obscuring body. Thick cloth folds catching warm light, convincing volume; no heavy full plate, no giant wizard hat, no long white beard. Clearly arcane, not holy."
+    },
+    {
+      "class": "class.priest",
+      "file": "assets/epic/priest.webp",
+      "width": 1200,
+      "height": 640,
+      "cell_width": 400,
+      "cell_height": 640,
+      "frames": [
+        {
+          "view": "three",
+          "source_cell": [
+            0,
+            0,
+            662,
+            887
+          ],
+          "alpha_bounds": [
+            81,
+            26,
+            632,
+            861
+          ],
+          "export_bounds": [
+            19,
+            64,
+            381,
+            612
+          ],
+          "head_y_source": 23,
+          "scale": 0.6563245823389021,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        },
+        {
+          "view": "side",
+          "source_cell": [
+            662,
+            0,
+            1164,
+            887
+          ],
+          "alpha_bounds": [
+            30,
+            27,
+            445,
+            864
+          ],
+          "export_bounds": [
+            64,
+            65,
+            335,
+            612
+          ],
+          "head_y_source": 22,
+          "scale": 0.6532066508313539,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        },
+        {
+          "view": "back",
+          "source_cell": [
+            1164,
+            0,
+            1774,
+            887
+          ],
+          "alpha_bounds": [
+            57,
+            28,
+            557,
+            862
+          ],
+          "export_bounds": [
+            36,
+            65,
+            364,
+            612
+          ],
+          "head_y_source": 23,
+          "scale": 0.6555423122765197,
+          "foot_anchor": [
+            200,
+            612
+          ]
+        }
+      ],
+      "source": "exec-d5b05db0-7e92-4809-bb27-1125ac0ea162.png",
+      "source_sha256": "88d48ff9f9287a20bd5fefaf8d6f1e855217337cb507435d377cb9a2389b89ea",
+      "sha256": "c8f96058c2ddd446bc4729456863c03c402e26995c09818fddeef6ad098b9161",
+      "bytes": 181746,
+      "prompt": "Use case: stylized-concept. Asset type: one production transparent character turnaround atlas for GuildGame. Image 1 is the approved warrior style/proportion reference. Image 2 is the newly produced warrior atlas: match its EXACT sculpted 3D-painted rendering quality, camera elevation, anatomy scale, soft warm key light from upper left, cool fill, material density and clean silhouette. Do not copy text or layout from image 1. Make exactly THREE full-body views of the SAME new hero in one horizontal row, three equal-size cells, landscape canvas: left front-right three-quarter looking right; middle true right profile looking right; right rear-right three-quarter looking right. Same outfit, face and weapons in all three. About 6.75 to 7 heads tall, adult heroic proportions, believable joints and substantial hands/boots, not chibi and not elongated fashion anatomy. Full head to boots and all weapon tips visible, same soles baseline, equal scale, 4 percent outer alpha margins. Genuine transparent background, no floor, no scenery, no labels, no logos, no text, no watermark. High quality game-ready original fantasy hero with sculpted volume, cloth thickness, bevelled metal, leather seams, ambient occlusion and restrained highlights. Readable at 130–200 pixels tall. Whole cohesive figures, not segmented paper dolls, no flat polygon overlays, no thick black outlines, no cartoon/anime, no plastic gloss. Subject: a dignified adult female HOLY PRIEST, graceful but strong believable adult anatomy, serene mature face, dark brown hair braided back, no hood covering face. Ivory and warm pearl layered ceremonial cloth robes, pale champagne panels, fine muted gold edging, a deep warm cream shoulder mantle, long split stole with one restrained sun-like geometric motif, light bronze bracers, leather belt with small prayer book, sturdy leather boots partly visible below robe. Calm upright supportive stance and relaxed shoulders, believable weight on both feet. A clearly visible one-handed ceremonial MACE with short leather-wrapped handle and a small sculpted gold/ivory radiant head held beside her right leg, entire mace visible; a small warm golden healing light floating just above her open left palm. Soft luminous gold accents, no giant wings, no halo disk, no full plate, no blue-purple mage energy. Clearly healer/support, noble and kind, not a warrior or arcane mage."
+    }
+  ]
+}
