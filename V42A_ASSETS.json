@@ -1,0 +1,44 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "purpose": "Original GuildGame V4.2A project assets",
+  "assets": [
+    {
+      "file": "assets/adventurers-directional.webp",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "layout": "4 classes × 3 directions",
+      "transparent": true,
+      "source": "exec-0f03b814-d1e4-480a-b640-2d65a400ca07.png",
+      "prompt": "Use case: identity-preserve. Asset type: production transparent directional character sprite atlas for GuildGame, original painted fantasy game. Edit the four reference heroes into a strict 4-column by 3-row atlas, portrait canvas 1024x1536 (each equal cell 256x512). Columns ALWAYS: blue steel warrior man, green hooded rogue woman, purple mage man, ivory/gold priest woman. Preserve these original character identities, clothing colors and broad silhouettes. Row 1: each hero in a natural RIGHT-FACING THREE-QUARTER standing pose, eyes looking right into the scene, not at camera. Row 2: same heroes in RIGHT SIDE PROFILE, feet separated, relaxed ready stance, gaze to right, arms separated from torso for animation. Row 3: same heroes viewed from the BACK-RIGHT THREE-QUARTER direction, faces turned away, ready to walk into the landscape. Every cell: one complete full-body character, centered at cell midpoint, head at 10% and feet at 93% of cell height, exact consistent size across directions. Generous transparent gutters. Empty hands, NO weapons, NO ground shadows, NO base plates, NO text, NO grid lines. Fine clean alpha edges and transparent canvas. Strong readable shapes, painted high-end colorful fantasy adventure style, warm natural rim light, anatomy and boots clearly separated. Absolutely no other IP, logos, Blizzard characters or symbols. The atlas is sliced directly into equal cells: alignment is essential. Each row is a different direction, not a different outfit.",
+      "css_source_row_regions_y": [
+        [
+          0,
+          528
+        ],
+        [
+          528,
+          1016
+        ],
+        [
+          1016,
+          1500
+        ]
+      ],
+      "normalization": "CSS background window and body inset normalize the generated rows and keep boots inside the frame; original raster unchanged."
+    },
+    {
+      "file": "assets/adventure-landscapes-v42a.webp",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "layout": "2 columns × 3 rows, six 768×341⅓ landscape cells",
+      "transparent": false,
+      "source": "exec-47d42f5b-6c19-4307-a214-720432dbce70.png",
+      "prompt": "Use case: stylized-concept. Asset type: production environment atlas for original GuildGame painted 2D fantasy adventure. Create a strict 2-column by 3-row grid of SIX FULL-BLEED WIDE LANDSCAPE backgrounds on a 1536x1024 landscape canvas; each cell exactly 768x341, no gaps and no borders. Top-left: warm sunlit winding trade road through a majestic mountain valley with a tiny distant fantasy watchtower. Top-right: lush emerald ancient forest glade with gold sun shafts and mushrooms. Middle-left: grand violet-blue highlands with warm grasses and distant waterfalls. Middle-right: abandoned woodland goblin camp, canvas tents and warm small fire far to right. Bottom-left: blue crystal cave entrance in a rugged mountainside. Bottom-right: deep goblin mine with tall wooden supports, amber lanterns and luminous blue mineral seams. Shared camera: shallow elevated three-quarter side view for human-sized walking game characters, NOT aerial view. In EACH cell keep a broad mostly clear traversable ground plane spanning the bottom 45 percent, horizon near upper third, objects in middle/distant layers, tiny foreground grasses/rocks restricted to bottom corners. Composition should allow 4-6 heroes each about one-quarter of cell height to stand convincingly on the ground. Rich colorful original painterly fantasy RPG art, epic atmospheric depth, warm/cool contrast, handcrafted bold readable silhouettes, fine brush textures, elegant realistic perspective, NOT a flat wallpaper. Background light source always upper-left. No people, no characters, no UI, no words, no text or numbers, no logos, no recognizable borrowed game IP. Precise equal grid, six different coherent settings. Avoid huge close-up props occupying the walkable ground."
+    }
+  ],
+  "processing": "Original generated PNGs inspected; converted to WebP quality 88, alpha preserved. Directional atlas is a stylized three-view asset, not skeletal animation."
+}
